@@ -7,6 +7,7 @@ kb_menu = types.ReplyKeyboardMarkup(resize_keyboard=True)
 kb_menu.add(types.KeyboardButton(text='Пройти тест'))
 kb_menu.add(types.KeyboardButton(text='Кто такие...'))
 kb_menu.add(types.KeyboardButton(text='Перейти на сайт'))
+kb_menu.add(types.KeyboardButton(text='Поддержка...'))
 
 kb_from1 = types.ReplyKeyboardMarkup(resize_keyboard=True)
 kb_from1.add(types.KeyboardButton(text='Пройти тест'))
