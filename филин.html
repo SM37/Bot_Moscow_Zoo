@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>ФИЛИН</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><meta name="description" content="Животные зоопарка" data-react-helmet="true"><meta name="keywords" content="Животные зоопарка" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">ФИЛИН</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">ФИЛИН</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Филин</span><span><b>Латинское название</b> — Bubo bubo</span><span><b>Английское название</b> — Eagle owl</span><span><b>Класс</b> — Птицы</span><span><b>Отряд</b> — Совообразные</span><span><b>Семейство</b> — Совиные или настоящие совы</span><span><b>Род</b> — Филины</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/763a0d3c-a7da-4cf1-812e-f0677e3df808.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Самая большая сова из ныне живущих видов. Крупные размеры, характерная внешность и ночной образ жизни, громкий голос сделали филина героем, причём резко отрицательным, многих страшных сказок, легенд и поверий.</p><p>Систематики выделяют 12 подвидов обыкновенного филина.</p><p><br></p><p><strong>Статус вида в природе</strong></p><p>Ареал филина очень обширен, но поскольку этот вид не выносит близкого соседства с человеком, его численность во многих частях ареала сокращается. Характерно это и для ряда регионов России, поэтому филин включён в Красную книгу России.</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p><span style="color: rgb(0, 0, 0);">Ареал филина охватывает большую часть Европы и Северной Азии: на севере – до границы леса, на востоке – до Сахалина и Японии, на юге – до Северной Африки, Аравии и Южного Китая. Он населяет леса, степи и даже пустыни, поднимается в горы до 5000 м над уровнем моря и хорошо себя чувствует на равнинах. В границах обширного ареала выделяется 12 подвидов, достаточно четко отличающихся друг от друга по размерам и окраске.</span></p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/1ce9da6b-6afc-4e63-843c-bd990b634927.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="6 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/865c6d62-bf73-4691-9a62-b3f17215b0b7.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="7 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/c528e655-bb15-4271-a0b6-cfba11764990.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="8 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/1fc505ab-1afb-4baa-a297-d3e5b5bfaf36.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="9 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/7466b235-1d08-451f-88ed-1bbb885042bb.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 9" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/f9b73786-2a12-4c3d-bac3-103c12c152a5.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b3fa70e3-a2bd-412b-95a9-06746936f11c.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/cc6b46f3-184d-44cf-a371-ba02066711dc.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a441399-b3cb-4299-9a79-7d2ae1ecf2c9.jpeg"></li><li class="splide__slide" id="splide01-slide05" role="group" aria-roledescription="slide" aria-label="5 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/a1fc7987-efc8-4344-a849-88dc9f7f763b.jpeg"></li><li class="splide__slide" id="splide01-slide06" role="group" aria-roledescription="slide" aria-label="6 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/865c6d62-bf73-4691-9a62-b3f17215b0b7.jpeg"></li><li class="splide__slide" id="splide01-slide07" role="group" aria-roledescription="slide" aria-label="7 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/c528e655-bb15-4271-a0b6-cfba11764990.jpeg"></li><li class="splide__slide" id="splide01-slide08" role="group" aria-roledescription="slide" aria-label="8 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/1fc505ab-1afb-4baa-a297-d3e5b5bfaf36.jpeg"></li><li class="splide__slide" id="splide01-slide09" role="group" aria-roledescription="slide" aria-label="9 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/7466b235-1d08-451f-88ed-1bbb885042bb.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/f9b73786-2a12-4c3d-bac3-103c12c152a5.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b3fa70e3-a2bd-412b-95a9-06746936f11c.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/cc6b46f3-184d-44cf-a371-ba02066711dc.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a441399-b3cb-4299-9a79-7d2ae1ecf2c9.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Филин – одна из самых крупных сов, причём его самки крупнее самцов. Длина тела колеблется от 65 до 71 см, размах крыльев 155-175 см, масса – 2,3-3,2 кг. Филины, обитающие в южных частях ареала, обычно мельче своих более северных собратьев. Общий тон оперенья желтовато-коричневый с крупными продольными отметинами и поперечным струйчатым рисунком чёрного цвета. Как у большинства видов сов, микроструктура перьев образует «пушистую» поверхность оперения, гася шумы, создаваемые токами воздуха при полёте, поэтому полёт филинов (как и многих других сов) бесшумный. На голове хорошо заметны удлиненные пучки перьев – «ушки», которые птицы могут приподнимать или опускать, и большие ярко-оранжевые глаза. Лицевой диск (особые перья, покрывающие переднюю часть головы) развит слабо. Очень подвижная голова филинов может поворачиваться почти на 360<sup>0</sup>.</p><p>	&nbsp;Лапы у филинов мощные, оперены до самых когтей. Как для большинства лесных сов, для филина характерна оборотнолапость, когда один из 3-х направленных вперед пальцев, может отводиться вбок и назад. Таким образом, в какие-то моменты лапа филина становится похожей на лапу попугаев, у которых 2 пальца направлены вперёд и 2 назад. Это облегчает птицам передвижение по ветвям деревьев, а также помогает более ловко и быстро схватывать добычу.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Как у большинства сов, активность филина сумеречная и ночная. Дневное время он предпочитает пережидать где-нибудь в укрытии.</p><p>Большую часть жизни филины проводят в одиночестве. Даже если самка и самец живут на общей территории, у каждого из них своё убежище, и каждый охотится самостоятельно. Филины консервативны и, при наличии достаточного количества корма, в течение всей жизни не покидают своего участка, площадь которого колеблется от 15 до 80 кв. км.</p><p><br></p><h2>Вокализация</h2><p>Голос филина громкий, слышный на расстоянии в 2-4 км, и представляет собой двусложное «у-хуу». Голоса самца и самки различаются по тональности.&nbsp;Крики самца могут переходить в хохот, а затем сменяться стонами и «плачем». В ночном лесу все это звучит довольно жутко, и не зря в народе филина прозвали «пугачом», да и мифы про лешего имеют то же происхождение. Крики филинов чаще всего слышны ранней весной, особенно в брачный период, когда птицы нередко «поют» дуэтом. Но можно их услышать и в другое время года, кроме, пожалуй, суровой зимы.</p><p>Вообще набор звуков, издаваемых филинами, очень разнообразен. Например, при беспокойстве у гнезда взрослые филины глухо «лают», а филинята свистят или шипят.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Филин – настоящий ночной охотник. На охоту он вылетает в сумерках и продолжает её до рассвета, с небольшим перерывом около полуночи. Он типичный полифаг, т.е. охотится и поедает самую разнообразную добычу: млекопитающих, птиц, лягушек, рыбу, беспозвоночных животных. Поэтому и способы охоты у него различные. При ловле наземных животных филин облетает свой участок низко над землей, внимательно приглядываясь и прислушиваясь к окружающей обстановке; при охоте на птиц летает над кронами деревьев, ловко маневрируя среди ветвей; однако все-таки предпочитает охотиться на земле и на птиц. Часто он высматривает добычу сидя на одном месте, как бы на своеобразном наблюдательном пункте.</p><p>	Рацион филина весьма разнообразен и включает около 110 видов млекопитающих и 140 видов птиц. Чаще всего его жертвами становятся животные средних или даже мелких размеров, но он может добывать и крупных дневных птиц (например, ястребов), и глухарей, и воронов. Из зверей добычей филина может стать и довольно крупный заяц, и маленькая мышка. Известны случаи, когда филины охотились на ежей, и в их гнёздах находили вывернутые ежиные шкурки (иглами внутрь). Не брезгуют филины и лягушками, а живущие около крупных водоемов охотно ловят рыбу.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Половозрелыми филины становятся в 2-3 года, но иногда отмечаются случаи гнездования молодых филинов через год после рождения. Пары образуются на всю жизнь.</p><p>	Сезон размножения филинов начинается рано, часто уже в феврале-марте, по снегу, самка откладывает 2-4 белых округлых яиц. Гнезда как такового у филинов нет, и яйца откладываются прямо в небольшую ямку в земле. Насиживает только самка в течение 34-36 дней, а самец кормит её все это время. Поскольку интервал между откладкой яиц 2-4 дня, птенцы в гнезде оказываются разновозрастными. Только что вылупившиеся птенцы покрыты густым светлым пухом, глаза у них закрыты. Глаза открываются только через 7-8 дней. Первые дни самка разрывает принесённую самцом добычу на мелкие кусочки и кормит ими птенцов, затем куски становятся крупнее, а через 3 недели птенцы начинают есть самостоятельно. Покидают гнездо молодые филины в возрасте 50-60 дней.</p><p>	Филины активно и успешно защищают гнездо от любых врагов, кроме, пожалуй, человека. Нападают на человека филины крайне редко, предпочитая пугать издалека. Подросшие птенцы при встрече с хищниками принимают угрожающую позу, распушают оперение, поднимают крылья «домиком», шипят и угрожающе щёлкают клювом.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	Филины относятся к птицам-долгожителям. В природе они доживают нередко до 20 лет, в условиях неволи – до 60 и даже 70 лет.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Хотя реально жизненные интересы человека и филина практически не соприкасаются, его долгое время считали вредным и опасным и безжалостно уничтожали, считая охотничьим конкурентом. Кроме того, внешний вид и образ жизни филина пугали людей, особенно сельских жителей. Мифический леший, наводящий ужас на заблудившихся ночью в лесу людей, всеми своими чертами сильно напоминает филина. И на крыше сказочного жилища Бабы Яги – избушки на курьих ножках - богатое людское воображение поселило именно филина (вместе с не менее «страшным» вороном).</p><p>	На самом деле, никакого реального вреда филин человеку не приносит, и опасности не представляет. А вот сам он от человека страдает. Благодаря активной хозяйственной деятельности человека утрачиваются места, благоприятные для гнездования филина, сокращается его кормовая база. Кроме того, филины гибнут на дорогах при столкновениях с машинами и на высоковольтных линиях.</p><p>	&nbsp;Как ловчую птицу филинов используют редко, хотя они могут ловить довольно крупную дичь, а вот в борьбе с серыми воронами, например, они хорошие помощники. Известно, что все дневные птицы, и в первую очередь умные вороны, ненавидят сов вообще и филинов, в частности.&nbsp;Поэтому, завидев открыто сидящего в дневное время на земле филина, вороны слетаются со всех окрестностей, чтобы наказать своего врага и отплатить ему за ночные страхи. Тут-то их и поджидают охотники. Правда, в этих случаях чаще всего используется не живой филин, а чучело птицы.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	Филины содержатся в нашем зоопарке практически постоянно. За эти годы неоднократно бывало и потомство. Размножались эти птицы, в том числе, и в вольере, который до последней реконструкции располагался в самом людном месте, в основании Переходного моста на Старой территории. Вся жизнь дружной пары сов проходила перед глазами посетителей: ухаживание с очень характерным «уханьем», насиживание кладки, во время которой самец приносил подруге корм, вылупление птенцов. Можно было наблюдать как растут дети, как родители их кормят, первые шаги филинят из гнезда….</p><p>	Филины содержались и в, так называемой, «выездной» группе. Это были достаточно ручные птицы, хорошо знающие ухаживающих за ними людей и не проявляющие по отношению к ним никакой агрессии. Они почти ежедневно выезжали на лекции, где их спокойно демонстрировали прямо на столе, без клетки. Такая «занятость» не помешала нашим «выездным» филинам начать гнездиться. Происходило это в течение нескольких сезонов, и потом их потомство тоже много лет ездило на лекции.</p><p>	В настоящее время пара филинов живёт в вольере на Старой территории зоопарка за малым прудом возле «Ручейка».</p><p>	В рацион филина в зоопарке входит 400 г мяса и 3 крысы. Живой корм необходим всем совам для нормального развития и образования погадок ((погадка – это тугой комок из шерсти, перьев, костей съеденных хищником животных), которые птица отрыгивает, когда они сформируются.</p></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

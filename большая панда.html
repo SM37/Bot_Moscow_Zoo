@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Большая панда</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Большая панда" data-react-helmet="true"><meta name="keywords" content="большая панда" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">БОЛЬШАЯ ПАНДА</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">БОЛЬШАЯ ПАНДА</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Большая панда, панда, бамбуковый медведь</span><span><b>Латинское название</b> — Ailuropoda melanoleuca</span><span><b>Английское название</b> — Giant panda , panda bear, panda</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Медвежьи</span><span><b>Род</b> — Большие панды</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/75762f49-479f-4c76-8884-b19e77b763c6.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Самый необычный и редкий медведь.</p><p>	На родине этого зверя, в Китае, его называют медведь-кошка, или бамбуковый медведь.</p><p>	Большая панда настолько сильно отличается от других видов медведей, что долгое время её считали то родственником енота, то выделяли в отдельное семейство. В настоящее время споры систематиков прекратились, мнения сошлись на том, что это всё-таки медведь, ранее других отделившийся от общего для всех медведей предка.</p><p>	Известны два подвида большой панды:</p><p>	<em>A. m. melanoleuca</em> – обладает типичной чёрно-белой окраской и встречается в провинции Сычуань.</p><p>	<em>A. m. qinlingensis</em> – отличается от предыдущего подвида более мелкими размерами и коричневой или светло коричневой окраской (вместо черной). Обитает в горах Циньлин в провинции Шэньси на высоте 1300-3000 м. Эта популяция была выявлена лишь в 1960-х годах, а статус подвида получила в 2005 году.</p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">До 2016 года большая панда числилась среди исчезающих видов, но сейчас ее статус в Международной Красной книге изменили на «находящийся в уязвимом положении вид». Этому способствовали радикальные меры, предпринятые китайским правительством по охране этого животного. Результатом стал впервые зарегистрированный рост популяции вида.</span></p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Большая панда – азиатское животное. Единственная страна, где они в настоящее время встречаются в природе, - Китай, точнее, несколько западных провинций страны. Раньше их ареал охватывал также бамбуковые леса Индокитая и острова Калимантан.</p><p>	Большие панды живут исключительно в густых бамбуковых лесах на высоте 1200-4500 метров над уровнем моря. Бамбуковые заросли, высота которых составляет 3-4 метра, дают пандам не только пищу, но и укрытие. В таких зарослях всегда сумрачно, что усугубляется проливными дождями и низкими тяжелыми облаками.</p><p>	В летнее время панды, особенно самки с детёнышами, отдают предпочтение лесистому высокогорью. Спасаясь от жары, они могут подниматься на высоту до 4 тыс. метров. Зимой, в поисках более комфортных температур, они спускаются по склонам гор, но в низины не заходят. В это время года панды менее активны. Если же выпадает много снега, они могут спать продолжительное время в убежищах, но настоящего зимнего сна, или спячки у них не бывает.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/38afd056-98c1-48e6-b8b9-8f71d4b13200.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Внешний вид этого медведя хорошо всем известен: массивное тело, покрытое густой шерстью черно-белого цвета, толстые короткие конечности с широкими лапами и мощными когтями. Вес взрослой панды может колебаться в широком диапазоне – от 17 до 160 кг, длина составляет 120-180 см, высота в плечах – до 70 см. Самцы значительно крупнее самок: тяжелее в среднем на 20% и длиннее на 10%. В отличие от других видов медведей, у панды довольно длинный хвост – 15-20 см.</p><p>	Ступни у панды короткие, в большой степени покрыты шерстью, и при передвижении по земле не полностью касаются поверхности. Строение передних конечностей панды отличается от других медведей. Особый вырост одной из костей запястья (сесамовидной) образует так называемый шестой палец, расположенный с внутренней стороны лапы. Этот «палец» появился у животного в процессе эволюции в течение миллионов лет как приспособление к питанию бамбуком. Когда панда ест, она держит им стебли, и создаётся полное впечатление, что один из её пальцев противопоставлен другим, как у человека.</p><p>	Имеется ряд отличий от других медведей и в строении зубов, что также связано с пережевыванием бамбуковых стеблей. Желудок панды, в который попадают жесткие стебли с острыми концами, имеет толстые мускулистые стенки и выстлан несколькими слоями слизистой ткани.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Большие панды могут быть активны в любое время суток. Эти животные не обустраивают постоянных убежищ и не прячутся на деревьях от опасности, подобно некоторым другим видам медведей. От непогоды они укрываются в расщелинах скал, пещерах, полых стволах деревьев.</p><p>Панды ведут одиночный образ жизни, что вообще характерно для медведей, встречаясь с особями противоположного пола лишь на несколько дней весной во время брачного периода. Участки самцов могут частично перекрываться с участками самок. Интересно, что самки энергично отстаивают границы своих территорий, тогда как самцы не обладают ярко выраженной территориальностью. Размер индивидуальных участков панд много меньше, чем у других видов медведей и составляет 4-6,5 кв.км. У самок участки меньше, чем у самцов.</p><p>&nbsp;</p><p><strong>Вокализация</strong></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">На первый взгляд панды кажутся молчаливыми животными, но это потому, что они ведут уединённый образ жизни. Звуки, которые они способны издавать, весьма разнообразны.</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">В процессе социальных взаимодействий панды активно вокализируют. Их звуки совсем не похожи на медвежьи, скорее напоминают блеяние ягнят или козлят. Так животные приветствуют сородичей. Негативные взаимодействия сопровождаются гулким гудением, или рёвом, который тоже не похож на медвежий. Демонстрация зубов во время быстрого открывания и закрывания рта с чавканьем означает, что к панде лучше не приближаться. Детёныши могут визжать и хныкать, чтобы привлечь мать. Взрослые визжат если им больно, или во время драк, демонстрируя подчинённое положение. Во время спаривания животные издают звуки, похожие на чириканье.</span></p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Хотя в систематическом отношении панда причислена к хищникам, 99% её рациона составляет не просто растительная пища, а исключительно бамбук (видов бамбука существует более 1000). Панда использует в пищу не только листья и молодые побеги, но и старые стебли бамбука. Ест она и его жесткие волокнистые корни. Поскольку бамбук не является калорийной пищей и плохо усваивается организмом, есть его приходится много. Поэтому панда, как правило, или кормится, или спит. В день панда съедает 12-18 кг бамбука, а крупные самцы – до 30 кг. Питаясь такой малокалорийной пищей, панда двигается очень немного. Перемещается на другое место она лишь тогда, когда весь бамбук вокруг съеден.</p><p>	Бамбук – быстрорастущее травянистое растение. Продолжительность жизни разных его видов различна – от 20 до 100 лет. В течение нескольких лет он вырастает в рощу, в конце жизни цветёт, на нём созревают семена, после чего растения отмирают. Таким образом, разом «вымирают» целые леса. Новые побеги из семян начнут появляться лишь через 2-3 года. Такие периоды являются губительными для многих животных, которые всецело зависят от бамбука, в том числе, и для панд. В 1975 и 1983 году была зафиксирована гибель огромного количества панд от голода, причиной чего была масштабная гибель бамбуковых рощ.</p><p>	Кроме бамбука, в меню панд в небольшом количестве входят луковицы некоторых растений, яйца, падаль, насекомые и другие мелкие животные, которые панда может поймать.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Начало периода размножения приходится на весну и продолжается в течение двух-трёх месяцев с марта по май. Запах и звуки самок привлекают самцов, между которыми наблюдается конкуренция. Период, в течение которого самка способна зачать потомство, очень короток и составляет 2-7 дней один раз в год.</p><p>	Средняя продолжительность беременности составляет примерно 135 дней. У медведей наблюдается латентная стадия, во время которой эмбрионы не развиваются. Это позволяет самкам произвести на свет детёнышей в наиболее благоприятный климатический период. В качестве родильной берлоги самки используют пещеры или большие дупла. Рождается 1-2 слепых и беспомощных детёныша. Новорождённые покрыты коротенькой светлой шерсткой, глаза и слуховые проходы у них закрыты, и малыши абсолютно беспомощны. Новорождённый детёныш большой панды весит от 90 до 130 граммов, что составляет 1/900 веса матери. Он является самым мелким новорождённым относительно веса матери среди всех млекопитающих, за исключением сумчатых. Интересно, что у новорождённого есть хвост около 1/3 длины туловища, который потом редуцируется. Ушные отверстия у медвежат открываются дней через 10, ещё через 3 недели открываются глаза. Характерная окраска взрослого животного у детёныша начинает проявляться в возрасте двух недель.</p><p>	Первые несколько дней самка не оставляет малыша ни на минуту.&nbsp;Следовать за матерью детёныш способен в 3-4 месяца. На 47 неделе прекращается кормление молоком, и детеныши окончательно переходят на взрослую пищу. До 1,5 лет они находятся с мамой, которая с удовольствием принимает участие в их играх. Рождение малышей происходит примерно один раз в два года.</p><p>	Взрослыми бамбуковые медведи становятся к 5-7 годам. В неволе этот период наступает на год-два раньше.</p><p>	В неволе долгое время не могли получить потомство у большой панды, впервые самка бамбукового медведя родила детёныша в зоопарке в 2000 г.</p></div></section><section class="audio"><span class="audio__title">Вокализация (Рычание или мурчание животного)</span><div class="audio__container"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/75762f49-479f-4c76-8884-b19e77b763c6.jpeg" alt="" class="audio__animal-img"><img id="play-btn" alt="" class="audio__control" src="/assets/img/audio-play.svg"><div id="audio-wave" class="audio__wave"><div></div></div></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>Максимальная зарегистрированная продолжительность жизни большой панды в неволе составила 26 лет. Сколько живут дикие панды точно не известно, но скорее всего, около 15 лет.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Большие панды издавна привлекали внимание людей своей необычной окраской. До наших дней дошла трогательная легенда.</p><p>	Сначала панды были белыми, только ступни черными. Но вот, умерла маленькая девочка, дружившая с ними, и они начали сильно горевать. Панды плакали и вытирали лапами слезы с глаз. Так черный цвет попал с лап им на глаза. Потом медведи стали утешать друг друга и обниматься – тогда в черный цвет окрасились их задние ноги, плечи и уши.</p><p>	Несмотря на внушительные размеры этого очаровательного медведя, описал его для науки лишь в 1869 г. французский натуралист Арман Давид, а натуралисты смогли наблюдать панду в дикой природе только в 1913 году. Как только панда стала известна на Западе, она приобрела большую популярность, поскольку похожа на плюшевого медведя, только необычно окрашенного. Сейчас большая панда является главным героем различных мультипликационных фильмов, любимой детской игрушкой. Это животное изображено на эмблемах различных организаций, является символом Всемирного фонда дикой природы (WWF).</p><p>	Однако отношения с людьми у панд складывались непросто. Необычная окраска меха сослужила животным недобрую службу, цена за шкуру панды доходила до 200 тыс. долларов США, и понятно, стала приманкой для браконьеров. Ценность меха панды определялась не только необычной окраской, но и поверьем о том, что человек, спящий на циновке покрытой этим мехом, якобы, видит вещие сны.</p><p>	В настоящее время панда официально объявлена национальным сокровищем Китая и неофициально является символом этой страны. За её убийство китайским законодательством предусматривается смертная казнь.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>Посетители Московского зоопарка впервые увидели большую панду в 1950-е годы. В 1957 году китайским правительством в дар Советскому Союзу к 40-летию Октябрьской революции был передан самец панды Пинь-Пинь. Он экспонировался на Острове зверей на Новой территории. В августе 1959 г. в Москву прибыл второй бамбуковый медведь – самец Ань-Ань, которого поселили на Старой территории в павильоне «Бамбуковый домик».</p><p>Вначале были большие трудности с кормлением, панды не хотели есть ничего, кроме бамбука. Бамбук пробовали заготавливать в Сухуми и Батуми и отправлять самолётами в Москву. Но это было слишком дорого, и сотрудники постепенно начали приучать животных к «российской» пище – веткам ивы и берёзы. Специалистами Московского зоопарка были разработаны специальные кормовые рационы. Кроме веток им давали рисовую и овсяную каши, морковь, фруктовые соки, сладкий чай. Сотрудники зоопарка внимательно наблюдали за пандами, так как о биологии этих животных знали тогда очень мало.</p><p>Самец Пинь-Пинь прожил всего 4 года, и к середине 60-х годов в зоопарках мира находилось 7 бамбуковых медведей, из них 5 – в Пекине, по одному в Москве и Лондоне. В 1966 г. в Московский зоопарк обратилось Лондонское зоологическое общество с предложением соединить самца Ань-Аня с самкой Чи-Чи, содержавшейся в Лондонском зоопарке. После переговоров на уровне правительств самку привезли в Москву. Обе панды жили в «Бамбуковом домике» на Старой территории зоопарка. Через полгода после неудачных ссаживаний Чи-Чи возвратилась в Лондон.</p><p>В 1968 г. теперь уже Ань-Ань отправили в Лондон. Ещё одна попытка образования пары больших панд оказалась неудачной, и Ань-Ань вернулся в Москву, где прожил 13 лет. Британская пресса во время пребывания Ань-Аня в Лондонском зоопарке ежедневно информировала людей о том, как ведут себя панды. Тогда же в магазинах в большом количестве начали продавать игрушечных панды и фарфоровые статуэтки с их изображением.</p><p>После того, как не стало Ань-Аня, в нашем зоопарке в течение почти 30 лет панд не было.</p><p>Следующий раз большие панды появились в нашем зоопарке в 2001 г.. Их привезли на 2 месяца в рамках проведения Дней Культуры Пекина в Москве. Экспонировали самца Бень-Бень и самку Вэнь-Вэнь по-отдельности в павильоне «Кошки тропиков» на старой территории. Бамбук для кормления животных доставляли самолётом из Адлера дважды в неделю. Всё это время за пандами ухаживали специалисты из Китая. Затем панды были отправлены обратно в Пекинский зоопарк.</p><p>Идея вернуть панд на экспозицию в Московский зоопарк появилась в 2016 году. Тогда же руководство зоопарка обратилось с просьбой в посольство КНР с просьбой рассмотреть возможность передачи панд на временное содержание. С этого времени на протяжении трёх с половиной лет велись многоуровневые переговоры и консультации с китайскими партнёрами. Согласованию подлежало всё: от расположения вольера до его технического оснащения. Московские зоологи прошли стажировку в Китае и познакомились со своими будущими подопечными. Бамбуковые медведи Жуи и Диндин родились и жили в двух разных центрах защиты панд и сначала их переправили в один из Китайских зоопарков.</p><p>И вот, наконец, 29 апреля 2019 года волнующий момент настал. Самолёт с пандами на борту приземлился в аэропорту г. Жуковский. На борту самолёта пандам были обеспечены комфортный для них температурный режим и влажность. Девятичасовой перелёт животные перенесли хорошо и за время транспортировки съели около 80 кг бамбука. В аэропорту панд встретили очень торжественно. В Московском зоопарке бамбуковые мишки будут жить 15 лет и, в рамках договора о научном сотрудничестве с китайскими коллегами, зоологи будут изучать этих интересных и редких животных.</p><p>Панд поселили в обновлённый вольерный комплекс «Фауна Китая», расположенный на Старой территории. В нем два больших экспозиционных вольера на улице и два внутри павильона, специальные берлоги, где животные могут отдыхать, и даже водоёмы. В вольерах поддерживается температура 18-20 ° и высокая влажность. &nbsp;</p><p>Самочка Диндин родилась 30 июля 2017 года, самец Жуи старше её на год – родился 31 июля 2016 года. Характеры у панд разные. Диндин отличается одновременно и повышенной бдительностью, и любознательностью, но больше всего она любит отдыхать на деревьях. Самец Жуи сообразительный, контактный, активный и любит играть. Животных содержат раздельно, но они отлично знают голос и запах друг друга. Кормят панд привычной для них едой – бамбук им доставляют из специального питомника в Голландии и из Китая.</p><p>Зоологи нашего зоопарка совместно с китайскими коллегами очень внимательно следят за состоянием животных, обе панды выросли здоровыми, и 24 августа 2023 года случилось важное событие – появился на свет малыш бамбукового медведя. Это первое рождение большой панды не только в Московском зоопарке, но и в России. Диндин оказалась замечательной мамой – заботливой и нежной, малышка Катюша растёт крепкая и здоровая.</p></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/8fd8966a-1827-44f3-8fe9-c5bfec2072ba.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Фауна Китая</span><span class="education-item__description">Павильон «Фауна Китая» находится в левой части Старой территории зоопарка за прудом. Здесь содержатся большие панды. Для этих животных специально переоборудовали павильон, где жили теплолюбивые кошки. Теперь здесь два больших внутренних вольера и два наружных. </span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 в свободном режиме</div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

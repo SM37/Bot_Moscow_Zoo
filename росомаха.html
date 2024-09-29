@@ -1,0 +1,509 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>РОСОМАХА</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Животные зоопарка" data-react-helmet="true"><meta name="keywords" content="Животные зоопарка" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">РОСОМАХА</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">РОСОМАХА</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Росомаха обыкновенная</span><span><b>Латинское название</b> — Gulo gulo</span><span><b>Английское название</b> — Wolverine</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Куньи</span><span><b>Род</b> — Росомахи (Gulo)</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/f12e9fd9-7916-4757-9039-1d2f4667b79c.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p class="ql-align-justify">Росомаха – вечная бродяга севера, внешне напоминающая небольшого медведя. Это самый крупный и сильный хищник из семейства куньих.</p><p>	Виды, подобные росомахе, учёные называют естественно редкими. Их численность никогда не бывает высокой, распространены животные в пределах ареала более-менее равномерно. На сегодняшний день общее количество росомах, по оценкам ученых, вряд ли превышает 20-30 тысяч особей.&nbsp;Международная Красная книга относит её к категории малоуязвимых видов.</p><p>	Однако природоохранным законодательством разных стран и регионов росомахи включены в местные Красные книги. В такой случае, статус вида зависит от ситуации, которая складывается конкретно на той или иной территории. К примеру, в большинстве европейских стран, на юге Канады росомаха находится под охраной как редкий вид, поскольку деятельность человека (вырубка лесов) привела к сокращению численности животных в этой части ареала ниже естественного фона. В Финляндии росомаха – вид, находящийся под угрозой исчезновения, охота на неё в этих регионах запрещена.</p><p class="ql-align-justify">	В пушном промысле имеет второстепенное значение из-за довольно грубого жёсткого меха.</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Распространена росомаха преимущественно в тайге, лесотундре, местами заходит в тундры Евразии и Северной Америки, встречается по высоким горным хребтам, поросшим лесом. В горах доходит до альпийских лугов. В Европе она сохранилась в Финляндии и на севере Скандинавского полуострова. На территории нашей страны ее ареал охватывает Ленинградскую, Вологодскую области, Пермский край, а также территорию Сибири.</p><p>	Соседства с человеком росомаха не избегает, но все-таки не любит. Места, которые человек начинает активно осваивать, росомаха покидает. Это одна из причин исчезновения и уменьшения её численности во многих районах Европы и Северной Америки.</p><p class="ql-align-justify">	Летом держится в самых различных биотопах, а вот зимой предпочитает территории с глубоким снегом, где добыча достается легче. Определяющее значение при выборе зимней территории играет наличие на ней стад крупных копытных – основной добычи росомахи в холодное время года.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/36153b87-e519-4c71-84b1-75e0b59690b0.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="2 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/3e6d77bf-7677-4813-bfe1-b7a7a1230d0d.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="3 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/154a5d0e-2f63-495f-941e-f36f02751014.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="4 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e02eca58-7d88-4682-9733-a9b42885e52f.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="5 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b7b5c7a3-7f1d-4847-81da-d65c9300f76d.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 5" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/fe7a44ac-912a-4240-9702-a7ecad0d31b4.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/3e6d77bf-7677-4813-bfe1-b7a7a1230d0d.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/154a5d0e-2f63-495f-941e-f36f02751014.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e02eca58-7d88-4682-9733-a9b42885e52f.jpeg"></li><li class="splide__slide" id="splide01-slide05" role="group" aria-roledescription="slide" aria-label="5 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b7b5c7a3-7f1d-4847-81da-d65c9300f76d.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/fe7a44ac-912a-4240-9702-a7ecad0d31b4.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/3e6d77bf-7677-4813-bfe1-b7a7a1230d0d.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/154a5d0e-2f63-495f-941e-f36f02751014.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 5" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e02eca58-7d88-4682-9733-a9b42885e52f.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Внешность у росомахи необычная и запоминающаяся. Приземистая, она похожа одновременно и на медвежонка, и на соболя. Сходство с последним вполне объяснимо: росомаха – самый крупный представитель куньих. Однако пропорции зверя для куньих нетипичны. Туловище не вытянутое, а довольно короткое: длина тела самцов 70-90 см, самки мельче. Вес самца порядка 12-16 кг, самки на 2-3 кг легче. Длина хвоста равна четверти длины тела. Голова у росомахи небольшая, скуластая, с большим ртом и маленькими ушками, едва выступающими из-под меха. Конечности длинные, с несоразмерно большими пятипалыми когтистыми лапами (передняя лапа напоминает медвежью). Из-за них росомаха кажется непропорциональной. Ступни, кроме подушечек, покрыты шерстью. Двигаться по снегу на таких «лыжах» можно не проваливаясь. Мех росомахи обладает удивительным свойством: благодаря густому подшерстку с водоотталкивающим эффектов, он никогда не покрывается инеем, даже в самые лютые морозы. Зимний мех отличается особой густотой и длиной. Самые длинные волосы растут на боках и задней части спины зверя, образуя своеобразную юбку. В окраске заметны светлые узоры – поперек лба проходит белая полоса, а на боках и крестце подковообразный светлый рисунок.</p><p class="ql-align-justify">	Как и у всех куньих, у росомахи есть прианальные железы. Их выделения, которые росомахи могут выбрызгивать на расстояние до 3 метров, обладают особенно крепким и неприятным запахом. Такое химическое «оружие» не только защищает охотницу от других хищников, но и придает ей смелости, да такой, что она нагло отбирает добычу у более крупных конкурентов, например, у рыси. Развит у хищниц также железистый участок и на животе. Его животное использует для маркировки границ территории – трется животом о ветки, камни.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p class="ql-align-justify">	Росомахи - одиночки, ведущие преимущественно ночной образ жизни. В редких случаях, около крупной добычи, на непродолжительное время может собраться несколько росомах. Индивидуальные участки росомах весьма обширны. От 1500 до 2000 км<sup>2</sup>. Чаще порядка 1000 км<sup>2</sup>. Свой индивидуальный участок зверь метит выделениями кожных желез и охраняет от непрошеных гостей. Особенно ревностно охраняет территорию самка с выводком. Она отважно набрасывается на непрошеных гостей.</p><p class="ql-align-justify"><br></p><p><strong>Вокализация</strong></p><p class="ql-align-justify">Росомахи редко вокализируют. Чаще всего можно услышать издаваемое животным в момент сильного раздражения хрюканье или рычание. Время от времени росомаха может издавать звук, похожий на лисье тявканье, но более грубый.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Внешняя медвежья неповоротливость росомахи обманчива. У зверя гибкое туловище и мгновенная реакция. Чаще всего охотница перемещается коротким шагом или переходит на свой излюбленный аллюр – легкий галоп. Бегают росомахи небыстро (10-15 км/ч), но подолгу. Они крайне выносливы – преодолеть за день 45 километров для них не проблема. Зимой в течение нескольких дней хищница способна тропить понравившееся стадо копытных (кабаргу, северного и благородного оленей, карибу, лосей). Затем, выбрав конкретное животное, начинает целенаправленный загон, который может продолжаться несколько часов. Потенциальная добыча бывает настолько ослаблена безостановочной гонкой, что от охотника не требуется больших физических усилий для последнего маневра. Пойманную добычу росомаха охраняет от конкурентов, отгоняя от нее значительно более крупных охотников, например, рысей, медведей. Чтобы прокормиться, росомаха убивает ровно столько животных, сколько ей нужно. Если корма много, она может сделать запасы, около которых живет некоторое время, пока кладовая не опустеет. Либо зверь вернётся к этим запасам спустя какое-то время, покочевав по своей территории. Весной росомаха промышляет кладки уток, тетеревов. Летний рацион становится значительно разнообразней – зверь разоряет птичьи гнезда, ловит мышей, змей, ящериц, лягушек, не отказывается от ягод и орехов. Деликатес для росомахи – личинки земляных ос. Однако активной ловле добычи росомаха предпочитает поиск падали и мертвечины. За что и получила звание санитара леса. Хищница может не есть дней 7-10, зато потом, если повезет с добычей, отъедается впрок. На обильных кормах росомаха быстро жиреет. Дневная активность животного зависит от его потребности – надо будет, росомаха будет активна, если захочет – устроится на отдых. Лёжки устраивает, где придется, под корягой, в дупле, под камнем, зимой роет снежные норы, а может отдыхать просто на голой земле или снегу.</p><p class="ql-align-justify">	Естественных врагов у росомахи практически нет, за исключением волчьих стай, да медведей. Росомаха очень осторожна. Обладая хорошим обонянием, но не лишком сильным зрением, она крайне редко попадает в капканы и ловушки, оставленные охотниками, хотя регулярно их обследует и забирает оставленную в них приманку.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Все процессы, связанные с выведением потомства у росомах сильно растянуты по времени. Гон начинается обычно в апреле и достигает пика в июле. В это время агрессия по отношению к представителям противоположного пола, значительно снижается, а самцы, напротив, свирепо и даже жестоко дерутся между собой. Спаривание пары происходит обычно несколько раз, каждому из которых предшествуют «свадебные церемонии» с агрессивными захватами самцом своей партнерши. После оплодотворения развитие яйцеклетки приостанавливается, наступает латентная фаза, характерная для всех куньих. Благодаря ей, появление малышей происходит в наиболее благоприятный период – на следующий год, с января по апрель.</p><p>	Перед рождением щенков самка готовит небольшое логово в старом дупле, под скалами, а то и просто в сугробе. Поблизости от него будущая мать делает многочисленные кладовые с запасами еды. Первые 2-3 недели, когда она будет выкармливать щенков, она будет активно ими пользоваться, чтобы надолго не покидать своих малышей. Выкармливание продолжается около 3 месяцев. В возрасте 6-10 месяцев подросшие щенки делают первые попытки самостоятельно охотиться на мелких зверей и птиц, а в год-полтора пробуют свои силы на крупной добыче. Вместе с матерью детёныши живут до второй зимы. Самцы, судя по всему, участия в выращивании и воспитании потомства участия не принимают.</p><p class="ql-align-justify">	Самки размножаются раз в 2-3 года.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p class="ql-align-justify">	В природе до 15 лет, в неволе - дольше.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Название этого необычного животного прочно вошло в фольклор многих народов мира.&nbsp;В скандинавских странах бытовало поверье (из-за сходства росомахи с медведем), что раз в несколько лет родившиеся у медведицы медвежата не вырастают, а превращаются в росомах. В Сибири "росомаха" и вовсе ругательное слово, обозначающее глупость и шкодливость. И древнерусское выражение "ходить росомахой" означает – быть неряшливым в одежде или поведении. Благодаря своим необыкновенно сильным челюстям, способным раздробить любую кость, у северных народов росомаха заслужила прозвище «северной гиены». Ее норвежское имя переводится как «горный кот». А вот среди северо-американских индейцев росомаха – чрезвычайно почитаемое животное, символ ума, силы и выносливости.</p><p class="ql-align-justify">	Отношения человека и росомахи можно назвать напряжёнными. Есть у этого зверя привычка забираться в поисках корма в человеческие жилища, охотничьи лабазы, разорять их, нанося тем самым людям серьёзный ущерб. Оленеводы уничтожают росомах за то, что последние нередко нападают на молодых животных.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>Увидеть росомаху в Московском зоопарке можно на Новой территории, на экспозиции «Полярный мир». Здесь живёт взрослый самец по имени Крендель, который родился в нашем Зоопитомнике. Сейчас он занимает два смежных вольера. Ещё недавно в одном из этих вольер жила самка, которую привезли в зоопарк в уже преклонном возрасте около 10 лет. Когда животные появились на экспозиции, нашим зоологам удалось в какой-то момент соединить их в пару, несмотря на то, что по своей природе эти звери – одиночки, и формирование у них пары – занятие непростое. К сожалению, малышей дождаться так и не удалось. А после того, как кавалер проявил излишнюю агрессию к своей даме во время гона, их разделили. Но в Центре разведения (Зоопитомнике) росомахи размножаются. Там в их распоряжении большие вольеры с естественной растительностью. Для самки сделана хорошая нора, где установлена видеокамера, чтобы можно было «подсматривать». Однако то, что люди считают удобным, далеко не всегда нравится животным, поэтому чаще самка сама роет нору и то, что родились малыши, зоологи определяют лишь по поведению матери. Ну а видят их, уже вышедших из норы. Зоопитомник Московского зоопарка – одно из немногих мест в мире, где удаётся получить потомство от этих скрытных животных.</p><p>Кормят росомах один раз в день. Еду им, как и другим животным, дают не на тарелочке, а прячут в разных местах вольера, даже подвешивают. Крендель особенно любит перепелов и крыс. Дают ещё свежую рыбу и мясо. Фрукты зверь ест не очень охотно. Раз в неделю у всех наших хищников полуголодный день, когда рационная норма урезана.</p><p class="ql-align-justify"><br></p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/karcev_aleksandr_romanovich" class="our-guardians__item"><img src="/assets/img/guardianship-all-6.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Карцев Александр Романович</span></div></a></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/178c539b-475e-4ecf-a223-d807705a1231.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Полярный мир</span><span class="education-item__description">Экспозиция «Полярный мир» существует в зоопарке с момента открытия Новой территории 3 октября 1926 года. Проект архитектора К.К. Гиппиуса для того времени был очень прогрессивным, так как животные в вольерах демонстрировались не за решеткой, а в условиях, близких к природным.
+</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

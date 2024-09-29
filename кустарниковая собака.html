@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>КУСТАРНИКОВАЯ СОБАКА</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Животные зоопарка" data-react-helmet="true"><meta name="keywords" content="Животные зоопарка" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">КУСТАРНИКОВАЯ СОБАКА</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">КУСТАРНИКОВАЯ СОБАКА</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Кустарниковая собака</span><span><b>Латинское название</b> — Speothos venaticus</span><span><b>Английское название</b> — Bushdog</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Псовые</span><span><b>Род</b> — Кустарниковые собаки</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/749d2229-df4c-4aa4-99bb-6a3e1bf37a64.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Эти маленькие собачки – активные хищники. Большая сплочённая семья может успешно охотиться даже на тапира.</p><p>Единственный вид в роде, но в пределах вида различают три подвида. Самые маленькие кустарниковые собаки – S.v. panamensis – живут на северо-западе Южной Америки. Самые темные, среднего размера – S.v. venaticus – на берегах Амазонки. И, наконец, самые светлые – S.v. wingei – в юго-восточной Бразилии.</p><p>Вид очень древний, один из самых древних на Земле. Наиболее близкий родственник в семействе - гривистый волк.</p><p>&nbsp;</p><p><strong>Статус вида в природе</strong></p><p>Кустарниковые собаки редки, несмотря на обширный ареал. До недавнего времени их вообще считали вымершими, они были известны только по окаменелым останкам, найденным в Бразилии. По международному статусу они относятся к видам близким к уязвимым - IUCN (NT).</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Кустарниковые собаки обитают в лесах и влажных саваннах Центральной и Южной Америки на территориях нескольких стран. Предпочитают места около воды, в том числе и галерейные леса (расположенные узкими полосами вдоль рек, текущих по засушливой местности).</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b6c89f79-3f3c-4fc1-b90e-5e147f0c683b.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone is-active" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ea3cafa7-c6e8-4e17-aa75-d7dceed0e708.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/4872bc56-c2f8-415d-a706-6d781df62dd9.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a9641b5-f436-4219-a2d9-97a25ca72c31.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/413da118-5580-4e04-b556-161e3b6cde0d.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ea3cafa7-c6e8-4e17-aa75-d7dceed0e708.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/4872bc56-c2f8-415d-a706-6d781df62dd9.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a9641b5-f436-4219-a2d9-97a25ca72c31.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/413da118-5580-4e04-b556-161e3b6cde0d.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ea3cafa7-c6e8-4e17-aa75-d7dceed0e708.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/4872bc56-c2f8-415d-a706-6d781df62dd9.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a9641b5-f436-4219-a2d9-97a25ca72c31.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/413da118-5580-4e04-b556-161e3b6cde0d.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Кустарниковая собака - одна из самых необычных представителей псовых. Зверь тяжелого, плотного телосложения на коротких лапах и c коротким хвостом. Длина тела 57-75 см, хвоста 12-15 см, высота в холке 25-30 см, масса 5-7 кг. Голова довольно большая с короткой тупой мордой, c маленькими глазами, с короткими ушами.</p><p>	Шерсть гладкая, жесткая, окраска её плавно меняется от рыжевато-коричневой на голове до тёмной на задней части туловища и почти черного хвоста. Щенки темнее взрослых.</p><p>	Отличительной особенностью кустарниковой собаки являются небольшие перепонки на лапах и наименьшее в семействе псовых число зубов (38-40). Считается, что число зубов сократилось в процессе эволюции. И у самцов, и у самок сильно развиты запаховые железы, расположенные около анального отверстия.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>	Животное практически не изучено в естественной среде обитания, и сведения о нем получены благодаря наблюдениям в зоопарках.</p><p>	Кустарниковые собаки ведут преимущественно ночной образ жизни, а день проводят в норах, которые выкапывают сами, или занимают норы других животных, например, броненосцев.</p><p>	Это высоко социальные животные. Они образуют постоянные пары, и семья пополняется рождающимися детёнышами. Однако подрастающее поколение не может иметь собственное потомство, пока живёт в родительской семье. Размножается только одна, доминантная самка. Семья занимает участок от 3,8 до 10 квадратных километров, который активно метится. Когда животные активно перемещаются, то часто издают поскуливание, по-видимому, так они поддерживают контакт друг с другом среди густого кустарника.</p><p><br></p><p><strong>Вокализация</strong></p><p>Звуковой репертуар очень богат. Когда собаки активны, они постоянно издают звуки. Звери могут и тявкать, и урчать, и выть - в зависимости от ситуации.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Типичные объекты охоты кустарниковых собак - паку, агути, капибары и другие крупные грызуны. Хищники могут добывать их в одиночку, но чаще охотятся сообща. Если в семье есть несколько взрослых животных, их добычей может стать пекари, нанду или даже 250-килограммовый тапир. При охоте на тапира часть хищников преследует его на суше, а часть поджидает в воде, куда он часто отступает, пытаясь уйти от преследователей. Однако собаки прекрасно плавают и ныряют, о чем свидетельствуют кожистые перепонки на лапах, и загнанному в воду тапиру приходится плохо.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Сезонность в размножении отсутствует. После спаривания через 65-83 дня рождается 3-6 щенков. Новорождённые слепые и беспомощные, вес их составляет 125-190 грамм. Через 14-19 дней у них открываются глаза, и вскоре малыши начинают выползать из норы. О детёнышах заботятся и кормят все члены группы. В течение четырёх недель мать кормит их молоком, затем молодые собаки окончательно переходят на взрослую пищу. Половозрелыми они становятся в годовалом возрасте.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	Сколько лет кустарниковые собаки живут в природе, никто не знает.&nbsp;В зоопарках – 10-12 лет.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Кустарниковые собаки легко приручаются. Есть мнение, что в некоторых удалённых деревнях местные жители иногда используют их во время охоты как обычных собак. Сами они объектом охоты не являются.</p><p>	В Бразилии этих животных называют "уксусная собака", или даже "уксусная лиса" - за специфический запах мочи, которой они активно метят свою территорию.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	К приезду кустарниковых собак в зоопарке готовились тщательно – переделали комплекс вольер, соорудили бассейн с проточной водой. И вот, наконец, в октябре 2017 г. из Новосибирского зоопарка к нам привезли молодого самца по кличке Вицли-Пуцли.</p><p>	Кустарниковые собаки – высоко социальные животные, а это означает, что в жизнь в одиночестве для них – сильный стресс. Мы не смогли сразу подобрать подходящую пару для Вицли, поэтому для того, чтобы его психическое состояние не страдало, к нему подсадили пожилую самку Майю. Размножаться она уже не могла, но стала для молодого самца заботливой «тётушкой». Осенью 2018 года привезли, наконец, молодую самку Фрею, которая сразу же дала всем понять, что она тут хозяйка. Майю пришлось отсадить в соседний вольер во избежание конфликтов, и она стала общаться с молодёжью через ограждение (в природе размножающаяся самка не терпит рядом других взрослых самок).</p><p>	Через год, в сентябре 2019 года у пары появились первые детёныши. Вицли-Пуцли и Фрея оказались замечательными родителями. Мама не отходила от своих трёх сыновей, кормила их и вылизывала. Папа приносил ей еду, а когда малыши начали переходить на взрослую пищу, начал кормить и их.</p><p>	Весна 2020 года у Вицли выдалась хлопотная – Фрея снова была беременна, и глава семейства решил «строить новый дом». Он начал копать нору. По-видимому, нора получилась очень добротная, поскольку именно в ней родились и провели своё младенчество очередные дети (один сын и три дочери). Зоологи в процесс не вмешивались, только увеличивали количество корма. Кроме того, они подкладывали ветки и брёвна, которые Вицли тут же пускал в дело – создавал надёжные укрытия.</p><p>	Семья кустарниковых собак продолжает расти. Периодически мы отправляем часть молодых животных в другие зоопарки, но численность их не уменьшается, рождаются новые малыши.</p><p>	Дружной семье кустарниковых собак наши зоологи постоянно предлагают что-то новенькое – прячут еду в разных углах вольера, выпускают в пруд живую рыбу. Иногда животные сами находят себе развлечения – в вольере растёт маньчжурский орех и, когда его плоды падают на землю, собаки внимательно обследуют их и играют: носят во рту, отпускают в бассейн и потом добывают оттуда. Часто бегают по вольеру друг за другом длинной вереницей.</p><p>	Кустарниковые собаки – теплолюбивые животные, однако живут они в Москве и уже неплохо акклиматизировались, поэтому во время оттепелей их можно увидеть в уличном вольере. Сильные морозы они проводят в домике.</p><p>	Комплект вольер, где живут кустарниковые собаки, находится на Старой территории зоопарка неподалёку от Дома птиц.</p></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

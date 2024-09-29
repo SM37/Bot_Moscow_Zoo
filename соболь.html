@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Соболь</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Соболь" data-react-helmet="true"><meta name="keywords" content="соболь" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">СОБОЛЬ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">СОБОЛЬ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Соболь</span><span><b>Латинское название</b> — Martes zibellina </span><span><b>Английское название</b> — Sable</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Куньи</span><span><b>Род</b> — Куницы</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/bd8c1346-b567-4b73-835f-554a27af59d8.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>	В настоящее время соболю не грозит исчезновение, в Красную книгу МСОП включён в категории&nbsp;LC&nbsp;(Least&nbsp;Concern) – «вызывающие наименьшие опасения».</p><p>	Однако столетие назад соболь был близок к вымиранию.</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Соболь – типичный таёжный хищник, когда-то его ареал охватывал почти всю таёжную зону Евразии, кроме самой западной её окраины. Однако уже к&nbsp;XVIII&nbsp;веку соболь был истреблён в европейской части ареала. Сейчас соболь распространён в равнинных и горных таёжных лесах от Урала до Тихого океана. Это лесной зверь, тесно связанный с древесной растительностью, и граница его распространения, особенно на севере и в горах, повторяет границу леса. В горах Восточной Сибири и Дальнего Востока в конце лета соболь нередко поднимается выше границы леса, в подгольцовый и гольцовый пояса, где поспевают шишки кедрового стланика.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/dfd3d66a-dc33-4058-ac14-2370730d9a1a.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Соболь – гибкий приземистый хищник размером с молодую кошку. Самцы чуть крупнее самок. Длина тела взрослого самца в среднем около 45 см (без хвоста), рост в холке около 15 см, масса тела около 1,5 кг (от 900 до 1800 г). Хвост у соболя длиной 13-17 см, короче и пушистее, чем у куницы.</p><p>	По окраске соболи могут сильно различаться – от почти чёрного однотонного до подпалого светло-песочного. Чаще всего у соболя более светлая, чем спина, голова, а самый тёмный окрас имеют концы лап и хвост. Желтоватое горловое пятно меньше по размеру и не так чётко обозначено, как у лесной куницы, а у некоторых соболей совсем размыто или отсутствует. Выделяют более десятка подвидов, несколько отличающихся друг от друга размерами, жёсткостью меха и окраской. Внутри каждого подвида встречаются и светлые, и тёмные особи, но с разной частотой. Так, более светлые зверьки встречаются между Уралом и Енисеем, а самые тёмные соболи обитают в Забайкалье (баргузинский, витимский, якутский). Наиболее дорогими считаются самые тёмные и ровно окрашенные шкурки, поэтому для расселения старались использовать именно забайкальских тёмных зверей, которые «разбавили» местные более светлые популяции.</p><p>	Как большинство куньих, соболи – стопоходящие звери (при ходьбе опираются на всю стопу, как люди, в отличие от пальцеходящих – например, кошачьих). И на передних, и на задних лапах по 5 невтяжных когтей. Зимой лапы соболя покрываются густым мехом, становятся как бы ещё массивнее, когти скрываются в жёстком и длинном волосе, растущем вокруг всей ступни, подошвы тоже зарастают, и зверёк ходит на волосяных подушечках. Опушение лап настолько увеличивает их размеры, что след крупного соболя на снегу намного больше следа крупной куницы. Большая площадь лапы позволяет соболю свободно передвигаться по снегу почти любой плотности, даже очень рыхлому, так как нагрузка на 1 квадратный сантиметр у него очень невелика.</p><p>	В бассейне Печоры и на Урале соболь встречается совместно с близкой родственницей – лесной куницей. До истребления соболя на Восточно-Европейской равнине их ареалы широко пересекались. Два вида нередко скрещиваются, образуя гибрид, называемый «кидас» или «кидус». Внешне кидусы – среднее между родительскими видами: хвост длиннее, чем у соболя, но короче, чем у куницы; на горле – жёлтое куничье пятно. Впрочем, нередко кидуса сложно по виду отличить от одного из родительских видов. Кидус – частично плодовитый гибрид: самки-кидусы скрещиваются с самцами куницы или соболя и дают потомство, а самцы-кидусы бесплодны.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Активны соболи чаще в сумерках, но могут охотиться и ночью, и днём. Дневная активность заметно повышается во время сезона размножения.</p><p>Не считая сезона размножения, соболи ведут одиночный образ жизни. Границы своего охотничьего участка соболь метит пахучим секретом, охраняет их, но нестрого. Нередко участки соседей значительно перекрываются, изредка соболи даже могут использовать одни и те же временные убежища (но в разное время).&nbsp;</p><p>Во время гона самец преследует самку, самка обороняется, иногда завязывается довольно мирная игра. При вольерном разведении после спаривания самка проявляет агрессию к самцу, и зверей рассаживают.</p><p>Молодые зверьки ходят с самкой до конца лета, затем выводок распадается.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Соболи всеядны, но основной добычей служат мышевидные грызуны – лесные мыши и полёвки, мелкие зайцеобразные – пищухи, реже – собственно зайцы. Ловят соболи и землероек, бурундуков, белок, птиц, поедают моллюсков и рыбу. Нередко, особенно зимой, кормятся на остатках добычи волков и других крупных хищников.&nbsp;</p><p>	Большую роль в рационе играет растительная пища – ягоды, орехи лещины. Как и многие лесные обитатели, соболь с удовольствием поедает кедровые орешки – и из шишек кедровых сосен (сибирской и корейской), и из более мелких шишек кедрового стланика. В горах Восточной Сибири и Дальнего Востока соболи осенью поднимаются выше горной тайги, в пояс кедрового стланика. Во время урожая стланиковых шишек здесь же собираются бурундуки и полёвки, приходят бурые медведи; бурундуки и кедровки сбрасывают и прячут шишки, а прочие любители орехов (в их числе и соболь) нередко находят и разоряют их запасы.</p><p>	В отличие от куницы, часто охотящейся на деревьях, соболь ищет добычу на земле, а на деревья забирается в случае опасности. На мелких зверьков соболь охотится подобно кошке, подкарауливая и подкрадываясь. Зимой ныряет в снег, на слух и по запаху определяя положение добычи. Зимой же соболь добывает куриных птиц – рябчика, тетерева – из снежных лунок, в которых птицы ночуют. Часто соболь охотится в курумниках – развалах крупных камней, где селятся колониями пищухи.&nbsp;</p><p>	Обычно суточный ход соболя не превышает двух-трёх километров, но при недостатке корма зверьки могут преодолевать по 10-12 км.</p><p>	Каждый соболь имеет индивидуальную охотничью территорию, площадь которой зависит от кормности и наличия убежищ. Убежищ обычно несколько, и после охоты хищник отдыхает в одном из тех, что оказываются поблизости. Соболи пользуются естественными убежищами – пустотами под корнями, выворотными ямами, низко расположенными дуплами, расщелинами среди камней. Среди убежищ различают постоянные, временные и случайные. Постоянные – наиболее обжитые, защищённые от мороза, с гнездовой камерой, выстланной древесной трухой или сухой травой – сеном, которое заготавливают под камнями пищухи, либо гнездом полёвки.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>Долгое время считалось, что беременность соболей – небольших по размеру млекопитающих – длится около двух месяцев, а период спаривания приходится на конец зимы: в это время охотники наблюдали повышение активности зверьков, преследование самцами самок и драк. Детёныши же появляются весной, с начала апреля.&nbsp;</p><p>Когда соболь оказался на грани истребления в начале ХХ века, было принято решение об искусственном разведении, и пойманных зверей ссаживали для спаривания в это же время – в феврале-марте. Однако потомство не появлялось. Некоторые охотники и прежде содержали соболей дома, отловив молодых зверьков. Изредка соболи размножались, но только в тех случаях, когда самцы и самки жили вместе по несколько лет.</p><p>Некоторые учёные пришли к выводу, что разведение соболя в неволе вообще невозможно. В 1926&nbsp;г. из-за этого расформировали питомник Севзапгосторга, которым руководил учёный-охотовед Владимир Яковлевич Генерозов. Часть зверей передали в Московский зоопарк, где с 1927 г. началось изучение соболя под руководством Петра Александровича Мантейфеля. Профессор Мантейфель пишет: «В 1928 г. небольшое количество соболей, имевшихся в зоопарке, спаривалось, причём, 13 июня и 3 и 14 июля спаривалась соболюшка по кличке «Кривой зуб» с Урала с канским самцом по кличке «Хромой». Три раза (с перерывами) у неё появлялось половое возбуждение. Дети родились у неё через продолжительный срок – 3 апреля. Таким образом, впервые мы установили приблизительный срок беременности соболя; безапелляционно же указанный в литературе срок беременности в 2 месяца оказался неверным.</p><p>Самка, покрытая в последующий раз 14 июля, дала потомство 3 апреля. Следовательно, срок беременности оказался 258, 264 или 294 дня, т. е. около 9 месяцев. Эти сроки бесспорны, так как после окончания спаривания самец был отсажен от самки и ни разу больше к ней не подпускался. &lt;...&gt; Таким образом, мы впервые в 1929 г. точно установили, что срок беременности соболя равен около 9 месяцев, куницы – около 8 месяцев».</p><p>Результаты, полученные в Московском зоопарке, были широко освещены, и в 1928 г. в летние месяцы гон соболей и куниц проводили на многих советских и зарубежных зверофермах.</p><p>При дальнейших исследованиях выяснилось, что у многих представителей семейства куньих очень длительная беременность. При этом детёныш развивается, действительно, за 5-6 недель, а бóльшая часть времени приходится на латентную (скрытую) фазу беременности: после оплодотворения зигота начинает дробиться, вскоре развитие замирает, при этом размер зародыша меньше миллиметра. В таком состоянии эмбрионы остаются до весны, а потом происходит их имплантация и дальнейшее развитие. Благодаря этому не так важно, в начале, середине или конце лета произошло спаривание – детёныши у всех самок в одном регионе появятся почти одновременно. На севере ареала это происходит позже, чем на юге. Весенняя же активность зверей получила название «ложного гона». Впрочем, учёные не исключают возможности истинного гона (со спариванием) у отдельных особей в это время.</p><p>Вся беременность соболя длится 238-295 дней, а развитие эмбрионов проходит за 35-40 дней.</p><p>Самка щенится в убежище под корнями деревьев или в расщелине между камнями, куда натаскивает подстилку. В выводке чаще 3-4 детёныша, старшие самки более плодовиты, чем молодые. Новорождённые соболята размером около 10 см, весят всего 25-30 г и покрыты светлым пушком – цвета топлёного молока, но вскоре сереют и темнеют. Они появляются на свет беззубыми, слепыми и с закрытыми слуховыми проходами, но с хорошо заметными тёмными коготками на лапах. Молочные зубы появляются в трёхнедельном возрасте. Уши открываются в возрасте 3-4 недель, глаза – в месячном возрасте. Тогда самка начинает приносить им подкормку, а заодно и «учебные пособия» для будущих охотников – придушенных полёвок и мелких птиц. Соболюшка кормит детёнышей молоком до 2 месяцев, к этому времени они вырастают до 30-35 см и набирают вес – около 800 г. В трёхмесячном возрасте соболята почти не уступают в размерах взрослым. В конце лета они расходятся от матери и начинают самостоятельную жизнь. К размножению молодые зверьки приступают на второй-третий год жизни.</p></div></section><section class="text-block "><span class="text-block__title">Вокализация</span><div class="text-block__dangerous">Соболь – молчаливый зверь. Недовольные соболи издают непрерывное глухое урчание. Защищаясь от врага (например, охотничьей собаки), соболь стрекочет. Брачные игры сопровождаются мяуканьем, быстро повторяющимися гортанными звуками и глухим ворчанием.</div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	В неволе соболи доживают до 18 лет, при этом самки приносят потомство до 13-15-летнего возраста.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Соболь известен людям, прежде всего, как обладатель очень ценной шкурки: мех его очень густой, мягкий, тёплый и одновременно лёгкий.&nbsp;</p><p>	Ареал соболя некогда охватывал почти всю таёжную зону Евразии. Спрос на его мех существовал издавна, «соболя» имели валютное значение, и в&nbsp;XV-XVI&nbsp;веках с развитием торговых связей Русского государства началось опустошение сибирских лесов.&nbsp;</p><p>	Путешественник и писатель Владимир Клавдиевич Арсеньев, описывая соболиный промысел в Уссурийском крае, отмечает, что до появления русских специальной охотой на соболя туземцы не занимались и убивали только тех зверей, которые случайно попадали в их ловушки. Из меха соболей шили головные уборы, наушники, рукавицы. Местами коренное население носило собольи шубы и использовало соболий мех на «подошвы лыж».</p><p>	Исследователь Камчатки Степан Петрович Крашенинников в середине&nbsp;XVIII&nbsp;века пишет: «В прежние времена бывало там [на Камчатке] соболей невероятное множество: один промышленник мог изловить их без дальнего труда до семидесят и осьмидесят в год, и то не для употребления кож их, ибо оные считались хуже собачьих, но более для мяса, которое употребляли в пищу, и сказывают, что камчадалы при покорении своем за ясак соболиный не токмо не спорили, но, напротив того, весьма казакам смеялись, что они променивали ножик на 8, а топор на 18 соболей».</p><p>	Если местные охотники ограничивали промысел, чтобы не подорвать воспроизводство кормивших их из года в год пушных зверей, то пришлые добытчики зачастую истребляли столько зверья, сколько позволяло их умение. «Соболями» и «прочей мягкой рухлядью» сибирские племена платили «ясак» – налоги в государственную казну; зачастую сборщики налогов и перекупщики увеличивали размер подати на свою долю. Объёмы промысла быстро возрастали, вынуждая местных охотников уходить всё дальше от привычных мест лова, осваивать новые угодья – нередко за сотни километров от дома. На смену охоте из лука пришли новые способы лова – кулёмки, отлов сетями и, наконец, капканы. В результате уже к&nbsp;XVIIIвеку на европейской части ареала соболь был истреблён, а за Уралом до самого Тихого океана уцелели отдельные, часто удалённые друг от друга очаги обитания этого хищника. Охота продолжалась, и к 30-м годам&nbsp;XX&nbsp;века ареал этого пушного зверя сократился до минимума – россыпи мелких населённых соболем «островов» в огромном море тайги.&nbsp;</p><p>	Локальные запреты охоты предпринимались ещё с конца&nbsp;XVII&nbsp;века, но соблюдались плохо. Не имел успеха и первый полный запрет (1913-1916): во многих районах добыча зверьков всё равно продолжалась. Только после пятилетнего запрета (с 1935-36 гг.), введения лицензионной добычи соболя (40-е годы), создания крупных соболиных заповедников (в дополнение к созданному в 1916 Баргузинскому: Печоро-Илычский, Кондо-Сосьвинский, Алтайский, Саянский, Сихотэ-Алинский, Кроноцкий) началось медленное восстановление популяции. Соболи в заповедниках могли свободно размножаться и расселяться за их пределы.&nbsp;</p><p>	Была проведена большая работа по реакклиматизации соболей – по выпуску их в места, где их когда-то истребили. Непростая проблема разведения соболя в неволе была решена в Московском зоопарке Петром Александровичем Мантейфелем и его учениками – участниками Кружка юных биологов зоопарка (КЮБЗ) (см. раздел «Размножение»).</p><p>	В настоящее время охота на соболя открыта, однако значение валюты шкурки утратили, запросы моды на меха снизились, и умеренная добыча не представляет для вида опасности. На первый план для сохранения соболя, как и многих других видов, выходит сохранение мест их обитания.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	Вольера соболя находится на экспозиции «Животные России», около круга катания. Животное вернее всего можно увидеть в утренние и вечерние часы и наверняка во время кормления. Больше всего наш соболь любит мышей и перепёлок, другое мясо ему нравится меньше. Получает он и мешанку из творога и яиц, а в качестве лакомства – мёд и орешки, а также сухофрукты. В природе соболю приходится побегать, чтобы найти пищу. Чтобы разнообразить поведение питомцев, сотрудники зоопарка используют самые разные приёмы – например, прячут еду в разные уголки вольеры. Соболю тоже приходится хорошенько поработать носом, чтобы разыскать орехи и капли любимого мёда.</p><p>	Как и в природе, наш соболь и его соседка-куница редко активны в солнечные дни, предпочитая сумерки или пасмурную погоду. Тогда можно увидеть, как ловко они прыгают с ветки на ветку, как едят, как прячут и перепрятывают «добычу».&nbsp;</p><p>	Соболи – давние и постоянные обитатели нашего зоопарка. История сохранения соболя и восстановления его численности в природе тесно связана с Московским зоопарком, где впервые удалось получить потомство соболей в неволе; руководил исследованиями профессор&nbsp;П.А. Мантейфель (см. раздел «Размножение»).</p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/http_www_enot_print_ru" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/3673d993-162b-47fb-bddd-78b3df15fd93.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Енот-принт</span><a href="http://www.enot-print.ru" class="our-guardians__link">http://www.enot-print.ru</a></div></a></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/d1774d29-0d97-405e-8eb7-4788513041d9.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Фауна России</span><span class="education-item__description">В Московском зоопарке можно увидеть множество представителей фауны России, населяющих самые разнообразные ландшафты – ледяные пустыни и сухие степи, тундру и тайгу, морские побережья и горные хребты.</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Коростель</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Коростель" data-react-helmet="true"><meta name="keywords" content="коростель, название коростеля, другое название коростеля" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">КОРОСТЕЛЬ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">КОРОСТЕЛЬ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Коростель, или дергач</span><span><b>Латинское название</b> — Crex crex</span><span><b>Английское название</b> — Corn crake</span><span><b>Класс</b> — Птицы</span><span><b>Отряд</b> — Журавлеобразные</span><span><b>Семейство</b> — Пастушковые (Rallidae)</span><span><b>Род</b> — Коростель (Сrex)</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/346e864c-6a0a-4b5f-ac5c-facb9a22fd2d.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Птица, характерный крик которой слышало большинство людей в тех местах, где коростель гнездится, но видели её немногие.&nbsp;<strong>&nbsp;</strong></p><p>Первое научное описание коростеля появилось в 1758 г. в 10-м издании «Системы природы» Карла Линнея.&nbsp;&nbsp;</p><p>Подвидов нет.</p><p><br></p><p><strong>Природоохранный статус</strong></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">По международному статусу коростель относится к видам,&nbsp;вызывающим&nbsp;наименьшие опасения – IUCN (LC).&nbsp;Однако в Европе в ХIХ и ХХ веках было отмечено значительное сокращение численности коростеля; его даже относили к уязвимым видам. Связано это было с изменившимися условиями заготовки сена – механизированная уборка проводилась в более ранние сроки, в результате чего погибали кладки, а нелётные птенцы попадали под колеса и ножи сенокосилок. Изменения ландшафта, в частности осушение болот, также повлияло на численность многих видов околоводных птиц, в том числе и коростелей. Всё это привело к тому, что в ряде европейских стран коростель оказался на грани вымирания. Однако более детальные исследования на территории Восточной Европы и, особенно, России показали, что там положение коростеля не столь катастрофично.</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">В Европе сохранению коростеля способствовали определённые&nbsp;охранные мероприятия. Например, стали регулироваться сроки и способы сенокосов, объявлено ограничение охоты, усилен контроль за браконьерством.</span></p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Коростель гнездится в лесной, лесостепной и степной зонах Евразии от Британских островов и Пиренеев на западе до верховьев Ангары и Западного Китая на востоке. На севере встречается от северной границы южной тайги (в России 61-630 северной широты).</p><p>	Обычно коростели селятся на равнинах, но в Альпах они гнездятся на высоте до 1400 м, в западном Китае –до 2700 м, на Тянь-Шане – до высоты 3000 м над уровнем моря.</p><p>	Раньше ареал коростеля был значительно шире и занимал большую часть Центральной и Северной Европы от 410 до 650 с.ш. и на востоке доходил до 1200 в.д. Однако в середине ХIХ века его численность в Западной Европе резко сократилась, а ареал распался на отдельные участки, т.е. стал фрагментарным. Сейчас в некоторых странах Западной Европы положение улучшилось. Однако больше половины мировой популяции коростеля и по сей день гнездится на территории России.</p><p>	В гнездовой период коростель населяет разнообразные полуоткрытые ландшафты, чаще всего сырые высокотравные луга, где высота травы достигает 50 см и больше. Также коростель охотно селится на сельскохозяйственных полях с различными культурами, лесных вырубках, по краям верховых болот, но избегает сильно заболоченных участков.</p><p>	Коростель является типичным дальним мигрантом, зиму он проводит в полосе саванн в центральной и юго-восточной Африке. Осенний пролёт начинается в августе и продолжается до середины октября, причём перед отлетом птицы значительно набирают вес. К местам гнездования коростели возвращаются поздно, в конце апреля - мае, когда подросшая трава обеспечивает надёжное укрытие.</p><p>	Мигрируют коростели в одиночку и ночью, поэтому проследить за пролётом довольно сложно. В связи с тем, что на местах гнездования коростели взлетают только в случае крайней опасности, а полёт их выглядит крайне «неубедительно» - порхающий, со свободно свешенными ногами - среди охотников (и не только среди них!) существует поверье, что на зимовку коростели идут пешком (это на расстояние нескольких тысяч километров!). Конечно это легенды, поскольку пройти пешком из средней полосы России в Африку ни одна птица не в состоянии. Во время миграции характер полёта коростеля меняется – взмахи крыльев становятся регулярными, а ноги прижимаются к телу.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/022c3701-6f3f-4bd8-9b3c-9a56e407a8a7.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Коростель – некрупная птица: длина тела 27-30 см, размах крыльев 46-53 см, масса тела 80-200 г. Самцы немного крупнее самок. Телосложение плотное, тело сжато с боков, шея заметно вытянута.&nbsp;Общий фон окраски рыжевато-охристый с тёмными пестринами. Половой диморфизм проявляется в разнице окраски рисунка головы – там, где у самца доминирует серый цвет, у самок преобладает охристо-рыжий. Клюв довольно короткий розового цвета. Ноги серовато-охристые, более тёмные у молодых птиц.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>В гнездовой период птицы держатся поодиночке, самцы занимают небольшие участки, на которых есть площадки для токования. На голос самцов прилетают или, скорее, приходят самки.</p><p>Коростель поднимается в воздух только при крайней необходимости, летит медленно и неуклюже и вновь опускается в траву, пролетев всего несколько метров. Зато на земле в густой траве эта птица перемещается легко и проворно, отлично петляет и затаивается. Есть данные, что коростели умеют плавать, а птенцы – и нырять, хотя обычно открытой воды эти птицы избегают.</p><p>&nbsp;</p><p><strong>Вокализация</strong></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Характерный крик самца, чаще всего передаваемый как «дерг-дерг» или «крекс-крекс», чаще можно слышать в мае и июне. В безветренную погоду этот брачный крик самца слышен на расстоянии в 1,5 км. Самое активное пение самца отмечается с 8 часов вечера до 5 часов утра; за это время он успевает «произнести» свое «крекс-крекс» не менее 20 тысяч раз. В пасмурную погоду коростеля&nbsp;слышно и днём. Токующий самец вытягивает шею и периодически поворачивает голову в разные стороны, в результате чего громкость пения меняется.</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Кроме этого, самого характерного и знаменитого крика, у коростеля есть ещё&nbsp;целый набор разнообразных звуков, издаваемых, например, при испуге, во время общения самки с птенцами.</span></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Разнообразная вокализация свойственна коростелю только в сезон гнездования, во время миграций и на зимовке птицы ведут себя молчаливо.</span></p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Питание смешанное с преобладанием животных кормов. Большое значение в питании имеют различные беспозвоночные животные – дождевые черви, моллюски, пауки, насекомые. Изредка коростель ловит и более крупную для себя добычу: мелких лягушек, тритонов, мышей. Среди растительных кормов доминируют семена различных трав, в том числе, злаков – как диких, так и культурных.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Первыми к местам гнездования возвращаются самцы. Вскоре по прибытии они занимают гнездовые участки и начинают громко кричать, охраняя занятую территорию от других самцов и привлекая самку.&nbsp;Такой охраняемый участок самца в среднем равняется 15-20 га. На границах &nbsp;участков нередко случаются стычки между соседними самцами. При появлении нарушителя хозяин участка принимает воинственную позу, распускает крылья, вытягивает шею и издает мяукающие звуки. Обычно пришелец быстро покидает чужую территорию, но бывают случаи, когда оба самца считают территорию своей – и тогда происходят настоящие драки.</p><p>	Перед самкой самец исполняет своеобразный брачный танец, часто сопровождаемый подношением корма. После спаривания голосовая активность самца на какое-то время снижается. Но вскоре после окончания кладки он покидает свою партнёршу, занимает другой участок, и весь брачный ритуал повторяется.</p><p>	В свою очередь, самки после того, как птенцы подрастут, также повторно спариваются с другими самцами и вновь откладывают яйца. Такая система спаривания называется последовательной полигамией.</p><p>	Гнездо устраивается в сухом месте, часто под кочкой и под прикрытием одинокого дерева или куста. Гнездо небольшое&nbsp;(диаметр 12—150 мм), но с глубоким лотком (35-40 мм). В качестве строительного материала используются сухие стебли различных трав, кусочки мха, мелкие корешки.</p><p>	Раньше считалось, что гнездо строит только самка. Однако наблюдения британских орнитологов за поведением коростелей в неволе, в условиях, максимально приближенных к природным, показали, что самец самостоятельно строит несколько гнёзд. И только после того, как самка выбирает наиболее качественное, происходит спаривание.</p><p>	В кладке обычно бывает не менее 7 яиц (от 5 до 14), которые самка откладывает по одному в сутки. Окраска скорлупы имеет явно покровительственную окраску (беловато-охристую с красновато-коричневым крапом). Насиживание длится 16-19 суток, причём все птенцы вылупляются практически одновременно. Они покрыты тёмным пухом и на вторые сутки покидают гнездо, но ещё 2-3 дня не могут самостоятельно&nbsp;добывать пищу, и их кормит самка. На крыло молодые поднимаются в возрасте 34-38 дней, но ещё задолго до этого они становятся полностью самостоятельными, и выводок распадается. В середине июля у самки появляется второй выводок. Половозрелыми молодые коростели становятся на второй год жизни.</p><p>	В конце июля – в августе у коростелей начинается полная линька, когда птицы полностью теряют способность к полёту. В это время коростели особенно тщательно прячутся в траве и ведут себя очень тихо.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	В природе жизнь у коростелей довольно короткая, всего 5-7 лет, в неволе известный предельный возраст 8 лет 5 месяцев.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Коростель относится к группе промысловых птиц, но охота на него регламентируется по срокам – только после окончания гнездового сезона. Охотятся на коростелей с собаками – легавыми или спаниелями. Охота на эту птицу сопряжена с трудностями благодаря особенностям поведения коростеля, поэтому чаще он попадает под выстрел во время охоты на других птиц.</p><p>	Своим необычным громким криком в брачный период коростель привлёк внимание многих писателей и поэтов; о нем есть стихи у Зинаиды Гиппиус, у С. Есенина, у А. Галича.</p><p>	Эта птица «засветилась» и в геральдике – коростель изображён на гербе Дергачёвского района Саратовской области (возможно, по созвучию: Дергачёвский – дергач).</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>В нашем зоопарке коростели живут в Доме птиц на Старой территории. Содержатся&nbsp;в одной вольере с другими околоводными птицами.&nbsp;Рацион состоит из животных и растительных кормов и максимально приближен к природному.</p></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/73ed5be7-eb6b-4302-8a44-502c33c34fce.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Ночной мир</span><span class="education-item__description">Павильон «Ночной мир» расположен на Старой территории зоопарка, рядом с «Деревом сказок».</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 10:00 до 19:45</div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

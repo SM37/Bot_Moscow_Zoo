@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>ПЕСЕЦ</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Животные зоопарка" data-react-helmet="true"><meta name="keywords" content="Животные зоопарка" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">ПЕСЕЦ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">ПЕСЕЦ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Обыкновенный песец, полярная лисица </span><span><b>Латинское название</b> — Alopex lagopus </span><span><b>Английское название</b> — Arctic (blue, polar, white) fox</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Псовые (Canidae)</span><span><b>Род</b> — Песцы</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/c41d53da-8b31-4c2b-9011-01cccc81a899.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p class="ql-align-justify">	На&nbsp;большой части своего ареала вид обычен, однако, численность отдельных подвидов значительно варьирует. Самый редкий песец обитает на&nbsp;острове Медный, он&nbsp;занесён в&nbsp;Красную книгу МСОП, численность взрослых особей не&nbsp;превышает 100.</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Песец&nbsp;— типичный представитель фауны Арктики и&nbsp;Субарктики, его область распространения как&nbsp;бы кольцом охватывает Северный Ледовитый океан. Этот зверь населяет материковые тундры, начиная со&nbsp;Скандинавского и&nbsp;Кольского полуостровов через всю полярную Евразию и&nbsp;Северную Америку, а&nbsp;также Гренландию, Шпицберген, Новую Землю, многие острова Северного Ледовитого океана, Канадский архипелаг.&nbsp;Песцы постоянно обитают на&nbsp;островах Прибылова, Алеутских и&nbsp;Командорских островах. Примечательно, что границы ареала этого хищника сильно смещаются в&nbsp;зависимости от&nbsp;сезона. Строят норы и&nbsp;размножаются эти животные в&nbsp;тундре и&nbsp;на&nbsp;Арктических островах, а&nbsp;во&nbsp;время зимних кочевок они иногда заходят далеко в&nbsp;глубь материка и&nbsp;могут оказаться не&nbsp;только во&nbsp;многих северных таёжных районах, но&nbsp;и&nbsp;в&nbsp;Южной Финляндии (почти на&nbsp;широте Москвы), южной части Прибайкалья, низовьях Амура. Иногда зимой песцы уходят из&nbsp;родной тундры и&nbsp;на&nbsp;север, во&nbsp;льды океана. Следуя за&nbsp;белым медведем и&nbsp;питаясь остатками его добычи, песцы проникают в&nbsp;очень отдалённые от&nbsp;суши места.</p><p>	Большой подвижностью зверьков и&nbsp;постоянным смешением популяций объясняется и&nbsp;слабо выраженная географическая изменчивость этого вида: на&nbsp;всём обширном пространстве его ареала выделяется всего от&nbsp;8 до&nbsp;10 подвидов.</p><p class="ql-align-justify">	Наиболее типичными местами обитания песца в&nbsp;летнюю пору, когда они живут осёдло, являются открытые тундры с&nbsp;холмистым рельефом. Чаще всего зверьки выбирают для поселений вершины водоразделов и&nbsp;сопок, верхние террасы речных долин, высокие берега озёр и&nbsp;морских побережий.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ee63f903-afb1-4f08-80a0-502911b7e9a1.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Полярная лисичка&nbsp;— некрупный зверь (длина тела 45–70&nbsp;см, вес от&nbsp;2 до&nbsp;8 кг) в&nbsp;зависимости от&nbsp;сезона года выглядит по-разному. Зимой, когда шерсть чрезвычайно густая и&nbsp;пышная, он&nbsp;кажется приземистым, широко расставленные уши едва выступают из&nbsp;меха. В&nbsp;коротком летнем мехе песец довольно высоконогий и&nbsp;стройный. Относительно крупная голова летом выглядит непропорционально большой, с&nbsp;огромными ушами и&nbsp;притупленной мордочкой. Различают две цветовые морфы по&nbsp;зимнему окрасу: белую и&nbsp;голубую. Каждая морфа по&nbsp;своему меняется к&nbsp;лету: «голубой» песец летом становится шоколадно-коричневым, а&nbsp;«белый»&nbsp;— бурым сверху и&nbsp;светло-серым снизу.</p><p class="ql-align-justify">	Песец&nbsp;— подвижный зверёк, по&nbsp;манере поведения похож на&nbsp;лисицу. Органы чувств у&nbsp;этого обитателя суровых полярных пустынь развиты лучше, чем у&nbsp;других представителей семейства псовых. Мышкующий песец за&nbsp;несколько метров слышит движение полёвки под снегом, тетеревиных птиц, ночующих в&nbsp;снегу, чует за&nbsp;100&nbsp;м, видит белых куропаток, которые для глаза человека сливаются с&nbsp;белыми фоном.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>	Песцы активны в&nbsp;любое время суток, поскольку в&nbsp;местах их&nbsp;обитания смена дня и&nbsp;ночи выражена лишь весной и&nbsp;осенью.</p><p>	Привязанность к&nbsp;определённому месту эти животные проявляют лишь летом, в&nbsp;период размножения, когда растут щенки. В&nbsp;это время пара занимает и&nbsp;охраняет от&nbsp;других песцов территорию, где находится нора и&nbsp;где звери охотятся. Территория активно метится мочой, причём в&nbsp;период гона самцы интенсивно трутся щеками и&nbsp;плечами о&nbsp;место мечения, перенося запах на&nbsp;свою шкуру. Границы территории регулярно патрулируются, и&nbsp;метки обновляются. Кроме запаха, звери подтверждают своё присутствие на&nbsp;территории звуками, благодаря которым животные знают, где находятся соседи, и&nbsp;чем они заняты.</p><p>	На&nbsp;острове Врангеля, где проводятся многолетние исследования за&nbsp;мечеными животными, ширина пограничной полосы между соседними территориями колеблется от&nbsp;600 до&nbsp;800&nbsp;метров, в&nbsp;зависимости от&nbsp;рельефа. В&nbsp;годы высокой численности размножающихся песцов, пары во&nbsp;время выкармливания щенков практически не&nbsp;нарушают границы территорий. При низкой численности, напротив, звери совершают регулярные выходы за&nbsp;пределы территорий&nbsp;— используемое пространство намного превышает охраняемое.</p><p>	На&nbsp;территории каждой семьи песцов расположены одна или несколько нор сложного строения, которые служат выводковыми. Кроме них имеются небольшие норы, которые могут использоваться щенками после того, как они начнут активно осваивать родительский участок обитания.</p><p>	Отдельную территорию может занять и&nbsp;оберегать от&nbsp;соседей и&nbsp;неразмножающаяся группа песцов из&nbsp;3–5 животных, между которыми устанавливаются сложные отношения, например, приветствия при встрече, но&nbsp;воровство из&nbsp;тайников друг у&nbsp;друга.</p><p>	Кроме территориальных животных в&nbsp;популяции всегда имеются одиночные звери, которые не&nbsp;привязаны к&nbsp;определённому участку и&nbsp;постоянно перемещаются, останавливаясь лишь для того, чтобы поохотиться и&nbsp;отдохнуть. Они не&nbsp;метят, не&nbsp;обозначают своё присутствие лаем и&nbsp;стремятся не&nbsp;контактировать с&nbsp;хозяевами территорий. Среди таких странствующих песцов встречаются не&nbsp;только молодые и&nbsp;стареющие, но&nbsp;и&nbsp;взрослые животные.</p><p>	По&nbsp;мере того, как подрастают и&nbsp;переходят к&nbsp;самостоятельной жизни щенки, и&nbsp;они, и&nbsp;их&nbsp;родители всё чаще нарушают границы территорий соседей и&nbsp;терпимее относятся к&nbsp;появлению на&nbsp;своих участках чужаков. На&nbsp;островах при достаточном количестве корма взрослые песцы могут оставаться зимовать на&nbsp;своих территориях, молодежь&nbsp;же кочует очень широко. В&nbsp;случае нехватки еды взрослые животные в&nbsp;поисках корма также покидают свои участки.</p><p class="ql-align-justify">	На&nbsp;материке массовые переселения песцов начинаются в&nbsp;августе—сентябре вслед за&nbsp;отлётом птиц с&nbsp;гнездовий. В&nbsp;это время зверьки проявляют признаки беспокойства, беспорядочно мечутся по&nbsp;берегам водоёмов, нередко собираются большими группами. Затем начинаются целенаправленные перемещения к&nbsp;югу, охватывающие массы животных. Песцы во&nbsp;время кочёвок бегут днём и&nbsp;ночью, почти не&nbsp;отвлекаясь по&nbsp;сторонам, при этом часто взлаивают и&nbsp;подвывают. Кочующие группы переплывают широкие реки и&nbsp;даже морские проливы шириной до&nbsp;2–4 километров. Весной песцы постепенно возвращаются назад. В&nbsp;голодные годы такие переселения носят особенно массовый характер.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Песец&nbsp;— всеядный хищник, мало разборчивый в&nbsp;пище: в&nbsp;тех суровых местах, где он&nbsp;обитает, привередничать не&nbsp;приходится. В&nbsp;континентальной тундре в&nbsp;рационе круглый год преобладают грызуны, в&nbsp;основном лемминги, которых хищник подкарауливает у&nbsp;норы, или «мышкует», подобно лисице. На&nbsp;побережьях песцы кормятся выбросами моря, большую долю в&nbsp;их&nbsp;питании составляет падаль.</p><p>	На&nbsp;острове Медный, где вообще нет грызунов, они крутятся на&nbsp;лежбищах котиков, выискивая погибших зверей, голодные хищники порой отваживаются нападать даже на&nbsp;живых детёнышей. Зимой здесь песцы живут в&nbsp;основном за&nbsp;счёт белого медведя, подбирая остатки его трапезы. А&nbsp;в&nbsp;сезон рыбного промысла они поселяются рядом с&nbsp;приморскими посёлками, поедая отбросы.</p><p>	Этот небольшой хищник охотится в&nbsp;одиночку, поскольку добыча чаще всего мелкая, а&nbsp;зимой её слишком мало, чтобы делиться. Однако около потенциальной добычи больших размеров, например, детёныша тюленя или котика, собирается несколько зверей. Они нападают на&nbsp;жертву со&nbsp;всех сторон, так что мать просто не&nbsp;успевает поворачиваться, чтобы отразить атаки хищников. В&nbsp;итоге детёныш погибает от&nbsp;многочисленных укусов.</p><p>	Если корма много, песец делает запасы. Он&nbsp;засовывает добытых леммингов и&nbsp;рыб в&nbsp;расщелины между камнями, зарывает в&nbsp;землю, плотно утрамбовывая копанку носом и&nbsp;лапами. За&nbsp;лето под кожей зверька накапливается слой жира, который защищает его от&nbsp;холода и&nbsp;одновременно служит энергетической кладовой. За&nbsp;зиму жир постепенно расходуется, так что к&nbsp;весне зверёк теряет до&nbsp;трети своего осеннего веса.&nbsp;</p><p class="ql-align-justify">Условия существования в&nbsp;тундре весьма суровы. Хотя песцы прекрасно к&nbsp;ним приспособлены, в&nbsp;некоторые годы и&nbsp;они оказываются в&nbsp;крайне тяжелом положении. Особенно пагубно сказываются на&nbsp;них периоды резкого падения численности леммингов, когда хищники, живущие на&nbsp;континенте, лишаются своего основного корма. Эти депрессии повторяются регулярно раз в&nbsp;несколько лет и&nbsp;неизменно влекут за&nbsp;собой падение численности песцов.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Период размножения у&nbsp;песцов начинается в&nbsp;апреле. Звери, у&nbsp;которых нет пары, подыскивают себе партнёров. В&nbsp;старых, сформированных парах самец старается держаться рядом с&nbsp;самкой, оба зверя активно метят участок (самец ставит свою метку поверх самочьей), и&nbsp;оба много лают. В&nbsp;это время, как правило, не&nbsp;только самец, но&nbsp;и&nbsp;самка агрессивно относятся к&nbsp;другим песцам. Они начинают проявлять интерес к&nbsp;норам, регулярно посещают их, метят и&nbsp;расчищают от&nbsp;снега отнорки.</p><p>	После гона наступает период затишья: самец и&nbsp;самка живут на&nbsp;своём участке, в&nbsp;основном охотятся или спят. При встречах приветствуют друг друга. Участок в&nbsp;это время они не&nbsp;метят и&nbsp;почти не&nbsp;лают. Примерно за&nbsp;три недели до&nbsp;щенения самка начинает выпрашивать у&nbsp;самца корм. Сначала он&nbsp;отвечает ей&nbsp;тем, что отдаёт пойманных им&nbsp;леммингов, но&nbsp;уже через несколько дней, поймав зверька, лаем зовёт самку или ищет её по&nbsp;следам, чтобы покормить. На&nbsp;острове Врангеля учёные часто наблюдали такую картину: самец медленно ходит по&nbsp;участку, охотясь, а&nbsp;беременная самка не&nbsp;спеша следует за&nbsp;ним. Когда он&nbsp;начинает выслушивать лемминга, или копать снег, она садится, смотрит на&nbsp;него и&nbsp;ждёт исхода охоты. Как только самец поймает добычу, самка быстро бежит к&nbsp;нему и&nbsp;бурно демонстрирует выпрашивание. Одновременно с&nbsp;кормлением самцом самки оба зверя начинают активно метить свой участок, лаять и&nbsp;агрессивно относиться к&nbsp;чужим песцам.</p><p>	Щениться самка уходит в&nbsp;нору и&nbsp;около 2-х суток не&nbsp;появляется из&nbsp;неё. Детёнышей в&nbsp;помёте бывает до&nbsp;20&nbsp;— песцы очень плодовиты, в&nbsp;среднем рождается 8–9 щенков, однако, все выживают лишь в&nbsp;годы с&nbsp;благоприятными кормовыми условиями. В&nbsp;первые две недели самка выходит на&nbsp;поверхность редко и&nbsp;ненадолго (не&nbsp;более 30–60&nbsp;минут). Во&nbsp;время выходов она обегает почти весь семейный участок, метит и&nbsp;часто лает. В&nbsp;это&nbsp;же время кормится, хотя в&nbsp;основном питается тем, что приносит ей&nbsp;в&nbsp;нору самец. В&nbsp;годы высокой численности леммингов самец практически полностью обеспечивает и&nbsp;себя и&nbsp;самку кормом, пока детёныши в&nbsp;норе.</p><p>	По&nbsp;мере подрастания щенков продолжительность уходов самки от&nbsp;них увеличивается до&nbsp;2–3 и&nbsp;более часов. Она начинает спать вне норы. С&nbsp;началом кормления щенков мясной пищей (примерно на&nbsp;4-й неделе их&nbsp;жизни) самец перестаёт кормить самку и&nbsp;носит корм только щенкам. В&nbsp;это время самка тоже начинает интенсивно охотиться и&nbsp;кормить щенков. Через несколько дней после начала кормления щенков мясной пищей наблюдаются их&nbsp;первые выходы из&nbsp;норы, вначале очень непродолжительные и&nbsp;неуверенные, только в&nbsp;присутствии родителей, а&nbsp;затем и&nbsp;без них. По&nbsp;мере взросления молодые зверьки начинают отбегать от&nbsp;норы вслед за&nbsp;родителями всё дальше и&nbsp;дальше.</p><p>	В&nbsp;период перехода щенков на&nbsp;мясную диету между ними нередки&nbsp;драки, иногда очень ожесточенные. Особенно часто это случается, если взрослый приносит одну порцию корма. В&nbsp;таких случаях часто вмешивается мать, которая прижимает лапой или хватает пастью агрессора, прекращая конфликт. Для снижения конкуренции среди детёнышей опытные родители по&nbsp;возможности приносят к&nbsp;норе сразу несколько леммингов. Иногда в&nbsp;момент перехода на&nbsp;мясной корм взрослые делят многочисленный выводок, перенося половину щенков в&nbsp;другую нору. Далее и&nbsp;самец, и&nbsp;самка кормят щенков из&nbsp;обеих нор. Такая стратегия поведения взрослых позволяет им&nbsp;растить детёнышей в&nbsp;наиболее благоприятной социальной среде и&nbsp;способствует выживанию большего количества щенков.</p><p>	Растут и&nbsp;развиваются молодые песцы быстро и&nbsp;в&nbsp;2,5-3-х месячном возрасте начинают переходить к&nbsp;самостоятельному существованию. В&nbsp;это время родители перестают отдавать им&nbsp;мясной корм. Всю добычу, которую взрослые не&nbsp;съедают сразу, они закапывают в&nbsp;тайники. Щенки постоянно бегают по&nbsp;их&nbsp;следам и&nbsp;достают корм из&nbsp;тайников. Таким образом, устройство тайников взрослыми становится основным способом выкармливания детёнышей во&nbsp;время перехода их&nbsp;к&nbsp;самостоятельной жизни. Одновременно молодые песцы учатся охотиться сами и&nbsp;осваивают весь родительский участок. Они бегают поодиночке, но&nbsp;часто встречаются друг с&nbsp;другом, играют и&nbsp;отдыхают рядом, по 2-3 зверька, а&nbsp;примерно раз в&nbsp;день собирается вместе и&nbsp;вся семья.</p><p>	Распад выводка при благоприятных кормовых условиях начинается с&nbsp;возраста примерно 3&nbsp;месяца. Гормональная перестройка у&nbsp;молодых животных ведёт, в&nbsp;частности, к&nbsp;увеличению доли исследовательского поведения, и&nbsp;зверьки начинают чаще выходить за&nbsp;пределы родительского участка. В&nbsp;это&nbsp;же время начинается промерзание почвы, и&nbsp;охотиться на&nbsp;леммингов становится всё труднее, приходится обследовать большую площадь. Отношение родителей к&nbsp;собственным щенкам остаётся дружелюбным, но&nbsp;подросшие животные в&nbsp;конце концов уходят и&nbsp;становятся странствующими.&nbsp;</p><p class="ql-align-justify">На&nbsp;следующий год молодые песцы уже могут начать размножаться, но&nbsp;чаще это происходит на&nbsp;втором году жизни.</p></div></section><section class="text-block "><span class="text-block__title">Вокализация</span><div class="text-block__dangerous">Песцы весьма разговорчивы, причем звуки, издаваемые ими, в зависимости от ситуации и психоэмоционального состояния очень разнообразны. Они могут напоминать урканье, плач, скуление, кудахтанье, верещание. Но чаще всего песцы лают. Они издают эти звуки при патрулировании границ своего участка, при перемещении по территории, члены семьи используют лай для перекличек друг с другом, а соседи перелаиваются со своих территорий. В тихую погоду лай песца человек может услышать с расстояния 3 км, он более сиплый и высокий, чем у собаки. Во время конфликтов звери рычат или визжат. В период гона или в начале массовых переселений звери часто подвывают. Очень богат звуковой репертуар при взаимодействиях самки со щенками.</div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	Живут песцы в&nbsp;природе недолго, в&nbsp;среднем 2–3 года, в&nbsp;неволе намного дольше.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	В&nbsp;тундровой зоне песец&nbsp;— самый обыкновенный и&nbsp;многочисленный хищник. Это основной объект пушного промысла в&nbsp;северных районах: добывают его ради меха. Издавна люди пытались разводить этого зверька в&nbsp;неволе для получения шкурок. С&nbsp;этой&nbsp;же целью песца несколько раз выпускали на&nbsp;небольшие острова Курильской гряды: там он&nbsp;находился на&nbsp;«полувольном» содержании&nbsp;— зверьков кормили, в&nbsp;остальном им&nbsp;была предоставлена полная свобода. С&nbsp;30-х годов прошлого века началось промышленное разведение песцов в&nbsp;зверосовхозах. Это, конечно&nbsp;же, благоприятно сказалось на&nbsp;сохранности песца в&nbsp;природе.</p><p>	Этот зверёк легко приручается: взятый щенком из&nbsp;норы, он&nbsp;почти не&nbsp;дичает с&nbsp;возрастом. На&nbsp;Командорских островах, где песца охраняют, он&nbsp;устраивает выводковые норы под зданиями, взрослые звери даже берут корм из&nbsp;рук человека. Там, где регулярно проводится подкормка, зверьки быстро привыкают собираться к&nbsp;определённому времени у&nbsp;кормушек.</p><p class="ql-align-justify">	Замечена интересная особенность: в&nbsp;тех местах, где песцы живут неподалеку от&nbsp;людей, летом они становятся не&nbsp;просто доверчивыми, а&nbsp;даже нахальными&nbsp;— роются в&nbsp;мусорных кучах, иногда даже воруют еду у&nbsp;домашних животных. Зимой те&nbsp;же животные стараются на&nbsp;глаза людям не&nbsp;попадаться, как будто знают ценность своей красивой шубки.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	Песцов можно увидеть в крайнем правом вольере комплекса «Фауна России», расположенном на Старой территории.&nbsp;</p><p class="ql-align-justify">	Зимой песцы одеты в&nbsp;белоснежную шубу и,&nbsp;когда отдыхают, кажутся пушистыми снежными островками. Летом они&nbsp;серо-бурой окраски и&nbsp;из-за короткого меха выглядят довольно нескладными: длинноногими, большеголовыми и&nbsp;ушастыми.</p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/https_neonate_ru" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/73f243d6-14e5-4b4e-ba5e-faf3446e92e1.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Нионейт</span><a href="https://neonate.ru" class="our-guardians__link">https://neonate.ru</a></div></a><a href="/about/guardianship/all-guardianship/prostor" class="our-guardians__item"><img src="/assets/img/guardianship-all-9.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Простор</span></div></a></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/0a54dcbf-4bba-445f-989f-cb230e7cc51b.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Бурые гиены, волки и кустарниковые собаки</span><span class="education-item__description">Напротив вольеры с мускусными быками живут разные представители семейства псовых – родственников собак.</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/d1774d29-0d97-405e-8eb7-4788513041d9.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Фауна России</span><span class="education-item__description">В Московском зоопарке можно увидеть множество представителей фауны России, населяющих самые разнообразные ландшафты – ледяные пустыни и сухие степи, тундру и тайгу, морские побережья и горные хребты.</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

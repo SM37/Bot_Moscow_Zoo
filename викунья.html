@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Викунья</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Викунья" data-react-helmet="true"><meta name="keywords" content="викунья, викунья животное, викунья фото" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">ВИКУНЬЯ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">ВИКУНЬЯ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Викунья</span><span><b>Латинское название</b> — Vicugna vicugna</span><span><b>Английское название</b> — Vicugna</span><span><b>Отряд</b> — Парнокопытные</span><span><b>Семейство</b> — Верблюдовые </span><span><b>Род</b> — Викуньи</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/7db581c7-d53e-4ce8-be9d-62db799b5508.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>	Ещё недавно викунья была редким животным. В настоящее время, благодаря предпринятым мерам по охране и восстановлению численности, исчезновение виду уже не угрожает –&nbsp;IUCN&nbsp;(LC). Количество животных в природе продолжает увеличиваться.&nbsp;</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p><span style="color: rgb(0, 0, 0);">Живут викуньи лишь на южноамериканском континенте, в высокогорьях Анд, причем держатся на высоте от 3500 до 5500 м над уровнем моря. Места их обитания – пампасы, полупустыни и каменистые или щебнистые плоскогорья со скудной растительностью. Они распространены в основном на территории Перу, а также в Боливии, Эквадоре, Аргентине и Чили.</span></p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e0feb057-998e-46fd-82d6-75f0a99b98a3.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone is-active" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/91cc9ee0-3131-412e-9751-668ad47389f1.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/f0925e4b-8a82-4e5a-96fd-32167430f208.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/0c014720-eaea-46d7-9792-a6871ab038b5.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ce7a259d-3196-4c8b-a3ee-90d498ca3938.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/91cc9ee0-3131-412e-9751-668ad47389f1.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/f0925e4b-8a82-4e5a-96fd-32167430f208.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/0c014720-eaea-46d7-9792-a6871ab038b5.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ce7a259d-3196-4c8b-a3ee-90d498ca3938.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/91cc9ee0-3131-412e-9751-668ad47389f1.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/f0925e4b-8a82-4e5a-96fd-32167430f208.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/0c014720-eaea-46d7-9792-a6871ab038b5.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ce7a259d-3196-4c8b-a3ee-90d498ca3938.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>Викунья – самое маленькое животное из семейства мозоленогих, длина тела 125-150 см, высота в холке - 70-110 см и масса тела – 40-50 кг. Подобно другим мозоленогим, у викуньи нет копыт, а на двупалых конечностях имеются лишь небольшие тупые когти. Она опирается на стопу, которая образована расширенной парной эластичной мозолистой подушкой. Такие стопы обеспечивают прекрасное сцепление со щебнистым грунтом, а когти предохраняют стопы от ударов о камни. Яркая рыжая шерсть покрывает верхнюю часть тела, живот, ноги и шея снизу почти белые, на шее и груди – красивый подвес из длинных волос длиной 20-35 см.&nbsp;<span style="color: rgb(51, 51, 51);">Длина шерсти взрослого животного может достигать 4,8 см, но, как правило, её средняя длина – около 3,28 см, Тонина (тонкость) шерсти&nbsp;</span>колеблется от 10 до 15 микрон, обычно – около 12 мкр, что в восемь раз тоньше среднестатистического волоса человека.<span style="color: rgb(51, 51, 51);">&nbsp;</span>Граница между тёмной и светлой шерстью выражена нерезко. Изящная головка на длинной шее, большие подвижные уши и огромные глаза, обрамлёнными длинными пушистыми ресницами делают животное необычайно привлекательным.&nbsp;</p><p>Анатомической особенностью викуний являются нижние резцы, которые, как и у грызунов, постоянно дорастают и «самозатачиваются», когда животное срезает жёсткие стебельки растений. Ничего подобного у других мозоленогих и парнокопытных не встречается. Ещё одна особенность, характерная для безгорбых высокогорных верблюдов – красные кровяные тельца - эритроциты овальной формы, в отличие от дисковидных, характерных для обитателей равнин.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>	Викуньи активны преимущественно в светлое время суток; глубокой ночью и днём, когда солнце в зените, они отдыхают, лёжа на расстоянии от 1 до нескольких метров друг от друга.&nbsp;</p><p>	Держатся эти животные преимущественно группами и живут осёдло. Взрослые самцы возглавляют гаремы из 3-10 самок с детёнышами и занимают определённые территории, вблизи границ которых есть характерные сигнальные кучи из помёта. Подойдя к такой куче, животное обязательно её обнюхивает, топчется и оставляет свои экскременты. На территории гаремной группы можно выделить 2 зоны: первая - там, где животные пасутся, площадью около 0,2 кв. км и вторая - небольшая, расположенная на возвышенной террасе, где они отдыхают.&nbsp;</p><p><span style="color: rgb(0, 0, 0);">Самцы-подростки держатся холостяцкими стадами и перемещаются гораздо шире, то отделяясь от стада, то вновь присоединяясь к нему. Взрослые половозрелые, а также стареющие самцы могут жить поодиночке, а могут временно присоединяться к холостяцким группировкам.</span></p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Обитатели суровых Анд, викуньи очень неприхотливы. Питаются они жёсткой травянистой растительностью, предпочитая злаки. Животные очень осторожные, во время пастьбы часто приподнимают голову и осматриваются. Два самых продолжительных периода пастьбы - на рассвете и на закате, несколько коротких – в течение дня. Летом, в самую жару они отдыхают, пережевывая пищу, как и все жвачные.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Гон у викуний бывает в марте-апреле, и спустя 11 месяцев у самок рождается по одному детёнышу. Детёныш появляется на свет маленькой копией родителей, только ещё более миловидный. Он чрезвычайно подвижен и следует за матерью уже через 15-30 минут после появления на свет. Спустя 2-3 недели после родов новоиспечённая мамаша вновь участвует в брачной церемонии, у взрослых здоровых самок детёныши рождаются ежегодно.&nbsp;</p><p>	Молодые животные остаются с матерями почти до годовалого возраста, потом покидают группу. Самцы присоединяются к холостяцкому стаду, а самки стараются влиться в другую гаремную группу. Такое поведение животных препятствует инбридингу (близкородственному скрещиванию), а размер родительской группы остаётся более-менее постоянным, что очень важно в условиях крайне скудных пищевых ресурсов.</p></div></section><section class="text-block "><span class="text-block__title">Вокализация</span><div class="text-block__dangerous">Викунья – довольно молчаливое животное, встревоженное, оно издаёт характерное фырканье.</div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Продолжительность жизни викуний 15-20 лет.</span></p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	<span style="color: rgb(51, 51, 51);">Викунья считалась священным животным в Андах с древнейших времен. Горцы верили, что она дана им богами для того, чтобы они могли выжить в голоде и холоде этих суровых мест. Во времена инков викунья была посвящена богу Солнца Инти. Инки называли её шерсть «золотым руном» или «руном богов», считали её целебной и запрещали убивать этих животных. Викуний ловили во время королевских охот, стригли и отпускали на волю,</span>&nbsp;при этом численность животных в природе оставалась стабильной.<span style="color: rgb(51, 51, 51);">&nbsp;</span>Из мягкой, красивой шерсти делали одежду для высоких вельмож. Испанцы же, прибыв в Южную Америку, начали отстреливать викуний в большом количестве. Это делалось в основном с целью получения самой дорогой и редкой в мире шерсти, хотя и мясо викуньи считалось деликатесом.&nbsp;</p><p>	Численность животных начала стремительно падать: если во времена инков, вплоть до&nbsp;XVI&nbsp;века, в Андах обитало более 2 миллионов викуний, то к 1965 г. их осталось не больше 6 тысяч особей. Ситуация начала меняться в конце 60-х годов прошлого столетия. В 1967 г. в Перу был создан первый заповедник для охраны викуний – Пампа-Галерас, в 1970г. США (основной импортёр шерсти) запретили продажу изделий из шерсти викуний, а ещё через 5 лет международная организация, занимающаяся охраной редких видов животных CITES, находящаяся под эгидой ООН, распространила действие запрета на весь мир.</p><p>	В настоящее время народы Анд вернулись к древней практике использования викуний – чаку. Это не просто своеобразная «охота» на викуний, в результате которой их отлавливают и стригут, но и празднество, на котором есть возможность попросить богов гарантировать плодородие земли и животных. Поворот в сознании людей произошел в первую очередь в Перу, на гербе, флаге и на денежных знаках которой изображено это грациозное животное. Перуанские власти вернули былое уважение к традициям и к викуньям, создав в 1993 г. ежегодный фестиваль викуньи в Пампа-Галерасе и возложив на местное население не только заботу о викуньях, но и предоставив общинам право на доходы от продажи шерсти.&nbsp;</p><p>	Чаку проводят с мая по октябрь. Живая цепь из пятисот и более местных жителей медленно берёт в кольцо испуганных быстроногих викуний. Задача людей, покрикивая и похлопывая в ладоши, привести стадо к временному загону, который специально предназначен для сбора шерсти.&nbsp;</p><p>	После того как викуньи надёжно заперты в загоне, «на сцену» выходят потомки древних инков – небольшая группа людей в традиционных красочных национальных костюмах собирается на камне, который специально устанавливается в центре загона. Здесь участники ритуала проводят церемонию, которая называется «тинкачу» - они возносят благодарность богам и просят разрешения воспользоваться дарами природы. Затем участники церемонии должны надрезать ухо самца и самки викуньи и смешать кровь животных. Это действо символизирует бракосочетание животных и, по верованиям инков, гарантирует их дальнейшее размножение.&nbsp;</p><p>	После ритуала всех пойманных викуний осматривают, метят, оказывают необходимую ветеринарную помощь. Стригут только взрослых животных, длина шерсти которых не менее 3 см, стрижку производят электрической машинкой (для ускорения процесса и снижения стресса у животного) лишь на спине и боках, оставляя на теле шерсть не менее 0,5 см длиной. Молодых зверей до года, беременных самок и ослабленных животных не трогают. После стрижки и осмотра всех викуний собирают в большом загоне и выпускают на волю одновременно, чтобы животные имели возможность восстановить прежний состав групп.</p><p>	В настоящее время численность викуний в природе около 2 миллионов особей, кроме того, работает международная программа по разведению этих животных в неволе, в которой наш зоопарк принимает активное участие (размножающаяся группа викуний содержится в Зоопитомнике). Исчезновение виду уже не грозит, и викунья является наглядным примером того, как правильная политика правительства вместе с международным сообществом привнесла гармонию в существование бок о бок людей и животных.</p><p>	Учёные до сих пор спорят о происхождении альпаки – домашнего животного, обладателя почти такой же чудесной шерсти, как у викуньи. Многие считают, что дикий предок альпаки – викунья, а не гуанако (дикий предок ламы).</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	В неволе викуньи обычно живут плохо, и попытки приручения этих животных обычно оканчиваются неудачей. Прежде всего, для их содержания нужны большие вольеры, где животные могут достаточно двигаться и самостоятельно выбирать места для той или иной формы активности. На территории зоопарка мы не можем предоставить им много места, поэтому размножающаяся группа викуний содержится в Зоопитомнике, где они живут на склоне горы в большом вольере.&nbsp;&nbsp;</p><p>	В 2004 году из разных зоопарков Европы туда прибыли самец и три самки. Животные отлично прижились в Подмосковье, и каждый год рождаются малыши. Сейчас численность около 20 особей, и несколько животных уже уехали в другие зоопарки мира.</p><p>	В Москве на экспозиции «Южная Америка» (Старая территория зоопарка, ближний к центральному входу вольер) викунья живёт вместе с ламой - другим представителем верблюдовых Нового Света. Это самка, которая родилась в нашем питомнике. Её привезли в Москву в годовалом возрасте, как раз в то время, когда в природе молодые животные уходят из семьи. Она прекрасно уживается с ламой – близким «родственником». Викунья и лама отлично понимают «язык» друг друга и живут дружно: и кормятся, и отдыхают как члены одной группы – в одно время и неподалёку друг от друга. Летом викунья играет с капибарами, порой вынуждая их «спасаться» в воде.</p></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/f1cba421-6584-4ca0-a0fa-551fe43cd43b.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Южная Америка</span><span class="education-item__description">В нескольких шагах от Главного входа, справа, находится экспозиция «Южная Америка». Здесь живут несколько видов животных, обитающих на этом континенте.</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>08:00-19:45</div></div><span class="education-item__link">Подробнее</span></div></div><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/c9856000-82f4-4b45-afd9-22f67c0567c9.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Домашние копытные</span><span class="education-item__description">аждое домашнее животное имеет своего дикого предка. У домашнего яка – это тибетский як. Его название указывает на место жительства и регион, где дикое животное было одомашнено.</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

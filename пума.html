@@ -1,0 +1,509 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Пума</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Пума" data-react-helmet="true"><meta name="keywords" content="пума" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">ПУМА</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">ПУМА</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Пума (горный лев, кугуар)</span><span><b>Латинское название</b> — Puma concolor</span><span><b>Английское название</b> — Cougar</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Кошачьи</span><span><b>Род</b> — Пума</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/b897ad6d-f35b-44c6-9ba5-f46e43a31105.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Кошка, живущая и в Северном, и в Южном полушариях. Обитает на землях многих индейских племён и поэтому имеет массу местных названий.</p><p>Старая классификация, основанная на морфологических характеристиках и сохранявшаяся до 1999 года, выделяла около 24—30 подвидов пумы.</p><p>По современной классификации, основанной на генетических исследованиях, выделяют 6 подвидов, привязанных к географическим областям:</p><p>P. c. couguar&nbsp;— Северная Америка (от юга&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Канады</a>&nbsp;до&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B2%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D0%BB%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Гватемалы</a>&nbsp;и Белиза);</p><p>P. c. costaricensis&nbsp;— Центральная Америка (<a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA%D0%B0%D1%80%D0%B0%D0%B3%D1%83%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Никарагуа</a>,&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D1%82%D0%B0-%D0%A0%D0%B8%D0%BA%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Коста-Рика</a>&nbsp;и&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D0%B0%D0%BC%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Панама</a>);</p><p>P. c. capricornensis&nbsp;— восточная часть Южной Америки (от южного берега&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%B0%D0%B7%D0%BE%D0%BD%D0%BA%D0%B0" rel="noopener noreferrer" target="_blank" style="color: blue;">Амазонки</a>&nbsp;в&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F" rel="noopener noreferrer" target="_blank" style="color: blue;">Бразилии</a>&nbsp;до&nbsp;<a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%B3%D0%B2%D0%B0%D0%B9" rel="noopener noreferrer" target="_blank" style="color: blue;">Парагвая</a>);</p><p>P. c. concolor&nbsp;— северная часть Южной Америки (Колумбия, Венесуэла, Гайана, Гвиана, Эквадор, Перу, Боливия);</p><p>P. c. cabrerae&nbsp;— центральная часть Южной Америки (северо-восток Аргентины, Уругвай);</p><p>P. c. puma&nbsp;— южная часть Южной Америки (<a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D0%BB%D0%B8" rel="noopener noreferrer" target="_blank" style="color: blue;">Чили</a>, юго-запад Аргентины).</p><p>Самый редкий подвид пумы - флоридская пума&nbsp;(<em>P. с. coryi</em>). Её численность в природе в 2011 году составляла немногим более 160 особей. Обитает она в лесах и болотах южной Флориды (США). Эта кошка отличается сравнительно мелкими размерами и длинными лапами. Окрас шерсти у неё тёмный, рыжеватый. В результате близкородственного скрещивания особи этого подвида приобрели загнутый кончик хвоста.</p><p>Другой восточно-американский подвид,&nbsp;висконсинская пума (<em>P. с. shorgeri</em>), вымер к&nbsp;1925 г.</p><p>В настоящее время как флоридскую пуму, так и висконсинскую, не выделяют в отдельные подвиды, их относят к подвиду&nbsp;<em>P. c. couguar</em>.</p><p>Подвид пумы, содержащийся в зоопарке, не определён.</p><p><br></p><p><strong style="color: windowtext;">﻿Природоохранный статус</strong></p><p><span style="color: rgb(0, 0, 0);">Пума включена в Международную Красную книгу как вид, чьё существование вызывает наименьшее опасение - CITES II, IUCN (LC).</span></p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Пума – американская кошка. Исторически ареал пумы был самым обширным среди всех наземных млекопитающих Америки. Область распространения этого вида простирался от юга Патагонии до юго-востока Аляски. В настоящее время на территории Северной Америки пума сохранилась преимущественно в горах западных районов. В Южной Америке пума распространена почти повсеместно.</p><p>	Эти хищники прекрасно приспосабливаются к самым разным условиям: они живут и в горных хвойных лесах, и в тропических лесах, и на травянистых равнинах. Пумы могут встречаться в горах на высоте до 4700 м над уровнем моря. Их распространение ограничивают лишь еда и убежища. Кроме того, пумы Южной Америки избегают пойм рек, где встречаются ягуары.</p><p>	Для успешной охоты пуме необходимы укрытия, за которыми она прячется, подкрадываясь к жертве, поэтому даже в открытых биотопах хищник выбирает участки, где есть камни или кусты.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2a00fba8-bd2a-49a6-9f7b-7211782b63f4.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="11 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/701e470b-c38f-4c58-be16-6c62f2150331.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="12 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e28cbc34-4d49-447a-8ab3-7a9178e38c33.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="13 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/a1f456f2-8102-4c39-a74e-ca74563bbdd1.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="14 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b89e0fe9-6e0f-43f4-8c95-2c5ae59c7205.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 14" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2ecc76fe-04e3-44b7-a114-4a48344e1bb4.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/16a63756-3102-466a-af51-21ba87cd9369.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ffbbc495-32d5-4771-ac1b-b01194f4efc3.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/7f03face-cf84-4219-bf80-11acbf665029.jpeg"></li><li class="splide__slide" id="splide01-slide05" role="group" aria-roledescription="slide" aria-label="5 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/db2bf800-a4d8-42ec-ae42-489aee546580.jpeg"></li><li class="splide__slide" id="splide01-slide06" role="group" aria-roledescription="slide" aria-label="6 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/20827452-7a03-44d8-9e93-5c335ab9771b.jpeg"></li><li class="splide__slide" id="splide01-slide07" role="group" aria-roledescription="slide" aria-label="7 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/067d49ac-d2dd-47d6-be6a-3d92e6a05227.jpeg"></li><li class="splide__slide" id="splide01-slide08" role="group" aria-roledescription="slide" aria-label="8 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/87a0cfda-82c1-4f17-af4d-c16a08f24f09.jpeg"></li><li class="splide__slide" id="splide01-slide09" role="group" aria-roledescription="slide" aria-label="9 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/c80941d2-5bd9-4a94-8638-74c2104e24d6.jpeg"></li><li class="splide__slide" id="splide01-slide10" role="group" aria-roledescription="slide" aria-label="10 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/925e6c3e-b95e-4e20-9b81-113e03409439.jpeg"></li><li class="splide__slide" id="splide01-slide11" role="group" aria-roledescription="slide" aria-label="11 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/701e470b-c38f-4c58-be16-6c62f2150331.jpeg"></li><li class="splide__slide" id="splide01-slide12" role="group" aria-roledescription="slide" aria-label="12 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/e28cbc34-4d49-447a-8ab3-7a9178e38c33.jpeg"></li><li class="splide__slide" id="splide01-slide13" role="group" aria-roledescription="slide" aria-label="13 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/a1f456f2-8102-4c39-a74e-ca74563bbdd1.jpeg"></li><li class="splide__slide" id="splide01-slide14" role="group" aria-roledescription="slide" aria-label="14 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b89e0fe9-6e0f-43f4-8c95-2c5ae59c7205.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/2ecc76fe-04e3-44b7-a114-4a48344e1bb4.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/16a63756-3102-466a-af51-21ba87cd9369.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/ffbbc495-32d5-4771-ac1b-b01194f4efc3.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 14" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/7f03face-cf84-4219-bf80-11acbf665029.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Крупная кошка практически однотонной окраски, отсюда латинское название вида: <em>conkolor</em> - одноцветный. Цвет взрослых особей варьирует от серовато-коричневого до коричневато-желтого. Шерсть на брюхе несколько светлее, чем на спине и боках. Темные только уши, кончик хвоста и морда. В тропических районах пумы мельче и рыжее, северные звери – более светлых тонов. Известно о существовании светлых и даже белых пум, а также тёмно-коричневых и черных особей, встречающихся преимущественно в Латинской Америке. Пумы-альбиносы и меланисты в природе неизвестны.</p><p>	У детёнышей окраска не однотонная – на туловище есть темные пятна, на лапах полосы, а на хвосте кольца. Рисунок исчезает лишь в годовалом возрасте.</p><p>	Самцы на 30% крупнее самок, достигают в длину 100-180 см при длине хвоста 60-70 см, высоте в холке 61-76 см и весе до 105 кг. Обычно самцы крупных подвидов весят 70-80 кг. Тело у пумы, как у всех кошек, гибкое и удлинённое, голова небольшая, лапы невысокие. Хвост длинный и мускулистый, лапы широкие, с острыми втяжными когтями.</p><p>	Несмотря на крупные размеры, пума относится к группе малых кошек, в отличие от льва, ягуара, леопарда, снежного барса и тигра – больших кошек. Малые кошки неспособны издавать рёв или рычание, что объясняется полным отвердением подъязычной кости, которая у крупных кошек состоит из нескольких мелких косточек.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Пума может быть одинаково активна и днём, и ночью. Смену активности определяет голод. Чаще всего излюбленное время для охоты - это сумерки, когда бесшумное животное становится совсем незаметным. Пума прекрасно адаптирована к жизни на пересеченной местности. Она легко передвигается по горным склонам, отлично лазает по деревьям и скалам и при необходимости хорошо плавает.</p><p>Как и все представители семейства кошачьих (за исключением львов), взрослые пумы живут поодиночке, самец с самкой встречаются лишь для размножения. Размер охотничьего участка пумы зависит от плотности потенциальной добычи и в Северной Америке колеблется от 32 до 1031 кв. км. Размер участка самца больше, чем самки, и хозяин ревностно оберегает его от других самцов. Территория самца обычно частично перекрывается с охотничьими участками нескольких самок. Животные избегают друг друга в зонах перекрывания участков, и достигается это мечением. Пумы метят определённые места при помощи мочи, помёта или поскрёбов – участков земли, или деревьев, где звери скребут когтями, оставляя визуальные метки.</p><p>	<strong>Вокализация</strong></p><p>	В силу особого строения гортани пумы не могут реветь и громко рычать, они довольно молчаливые звери. Громкие вопли, немного похожие на человеческий крик, издают лишь самки в брачный период. Общаясь с котятами, они «разговаривают» гораздо тише. Кроме того, пумы могут мурлыкать, подобно домашним кошкам.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Пума – хищник, который питается исключительно животной пищей. Объектом охоты могут быть самые разнообразные животные: от мышей, белок, опоссумов, кроликов до койотов, рысей и других пум. Ест она также птиц, рыбу и даже улиток и насекомых. Не откажется пума и от луговой собачки, сурка или обезьяны. Однако основное место в рационе пумы занимают копытные: чернохвостые, белохвостые и пампасные олени, вапити, лоси, карибу и толстороги. В Северной Америке доля копытных в питании этого хищника 60% и более. В горах Южной Америки пумы успешно охотятся на безгорбых верблюдов. При случае они нападают и на домашний скот, кошек, собак, птицу.</p><p>	Подсчитано, что крупный самец пумы убивает оленя каждые 9-12 дней, съедая сразу до 8 кг мяса, а остатки прячет. Пока добыча не съедена целиком, зверь держится неподалёку, отдыхая вблизи своего тайника. Другие хищники, а также падальщики, стараются полакомиться остатками еды, и часто пуме на следующий же день приходится вновь выходить на охоту. Охотится хищник обычно с наступлением сумерек, так легче подкрасться к намеченной жертве, но, если очень голоден, может попытать счастья и днём.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Пумы достигают половой зрелости к 2 годам, но молодые животные, как правило, не приступают к размножению, пока не обретут постоянный охотничий участок.</p><p>	Пумы способны к размножению в любое время года, но пик рождений детенышей обычно приходится на январь и август. Поскольку обширный охотничий участок взрослого самца перекрывается с участками сразу нескольких самок, он может в течение года вступать в размножение с разными самками. Спаривание, как и у других кошек, сопровождается кровавыми драками и дикими криками самцов.</p><p>	Готовясь стать матерью, самка устраивает логово в расщелинах скал, между корнями деревьев или просто в укромном месте среди зарослей травы. Беременность длится 92 дня, после чего на свет появляются от 1 до 4 слепых котят (чаще два-три), весом до 500 г. Шерстка у них пятнистая, черновато-бурая. Такая окраска служит камуфляжем, скрывая от хищников (в том числе, от взрослых самцов пумы). С 12-14 недели пятна становятся все бледнее, но окончательно исчезают только к полутора годам.&nbsp;</p><p>	Буквально в первые же минуты после рождения детёныши начинают жадно сосать молоко и в первые недели бурно прибавляют в весе. В двухнедельном возрасте у детенышей открываются глаза и уши, и они активно ползают, с любопытством обследуя логово и его ближайшие окрестности. Тогда же у них прорезываются первые зубы.</p><p>	Самка периодически уходит на охоту и на некоторое время оставляет детенышей одних. Поначалу она старается держаться вблизи логова, а когда дети подрастают, принимается обследовать весь свой участок.&nbsp;</p><p>	Через 8-9 недель пума перестает носить мясо в логово и начинает брать детей с собой на охоту. В возрасте 2-3 месяцев котята прекращают питаться молоком, но ещё несколько месяцев остаются с матерью, которая охраняет их и учит охотиться. В конце концов мать уходит, что связано, чаще всего, с началом нового репродуктивного сезона. Подросшие молодые пумы какое-то время держатся вместе, прежде чем расходятся в поисках собственных охотничьих участков.</p><p>	Чтобы найти подходящее и не занятое другой пумой место для охоты, им иногда они иногда вынуждены пройти не одну сотню километров. Молодым самкам приходится несколько легче, они могут устроить себе дом и неподалёку от матери. А вот молодые самцы, пока не определятся, подвергаются особенно высокому риску, вступая в конфликты как со взрослыми пумами, так и с человеком. Чаще всего на домашних животных (и на человека) нападают именно такие молодые звери в возрасте 1-2 лет.&nbsp;Взрослые же пумы, стремясь защитить свой участок, не только отгоняют молодых, но и убивают.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	В природе продолжительность жизни пум составляет 10-12 лет у самцов, чуть больше у самок. В регионах, где на пуму разрешена охота, причиной гибели взрослых животных чаще всего становится именно человек. Кроме того, пумы попадают под колёса транспорта, погибают в стычках друг с другом, от ран, полученных во время охоты, реже от болезней. Мало кто умирает от старости.</p><p>	В зоопарках пумы доживают до 20 лет.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	В 1553 году даётся одно из первых её описаний в книге «Хроника Перу» Сьеса де Леона. Слово «пума» происходит из языка <em>кечуа – </em>самого распространённого языка американских индейцев.</p><p>	Люди издавна восхищались изяществом и силой этой кошки. В Южной Америке в сложном имени человека часто звучало название мощной кошки. Изображение пумы часто встречается на керамических изделиях. Инки ассоциировали это животное с богом неба и грома. В Северной Америке, например, у апачей, вопли, издаваемые пумой, являлись предвестником смерти. Другие индейские племена отождествляли этого зверя со злым духом из загробного мира. В то же время в племени чероки он являлся священным животным и был неприкосновенен.</p><p>	Человека пума обычно избегает, нападения бывают редко и происходят летом или осенью, когда молодые пумы покидают своих матерей и осваивают новую территорию. Между 1890 и 1990 гг. в Северной Америке было зафиксировано 53 нападений кугуаров на человека, 40 из них закончились травмами, а в 10 случаях люди погибли.</p><p>	Пума может нападать на скот: телят, овец, коз, чаще это происходит, когда учатся охотиться молодые животные. Понятно, что такое поведение вызывало недовольство фермеров, и их преследования значительно сократили численность зверя в Северной Америке.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	За время существования зоопарка пумы содержались здесь неоднократно. Эти кошки хорошо живут в неволе и приносят потомство.</p><p>	&nbsp;В настоящее время в «Кошачьем ряду» живёт крупный самец пумы, который прибыл из зоопарка Великого Устюга.&nbsp;Гуляет по вольере он не только вечером, как большинство кошек, но часто активен и днём. В его ежедневный рацион входит 1,5 кг говядины, немного бычьего сердца и 4-5 крыс, которых он съедает с большим аппетитом. Знакомых людей зверь приветствует утробным звуком, отдалённо напоминающим мурлыканье.</p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/belolipeckih_anna_sergeevna" class="our-guardians__item"><img src="/assets/img/guardianship-all-2.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Белолипецких Анна Сергеевна</span></div></a><a href="/about/guardianship/all-guardianship/tkano" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/40e17583-6ea2-4b12-a84d-7d1feb644cbd.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Tkano</span><a href="https://tkano.ru" class="our-guardians__link">https://tkano.ru</a></div></a></div></section><section class="animals-kinds-detail__list list"><span class="list__title">Экспозиции</span><div class="list__container"><div class="education-item" href=""><div class="education-item__image"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/excursions_list/3dc685fc-0e9c-45a0-8f10-696865e58493.jpeg" alt=""></div><div class="education-item__info"><span class="education-item__title">Кошачий ряд</span><span class="education-item__description">Многие люди испытывают особую симпатию к кошачьим и, конечно, хотят их увидеть и у нас. На Старой территории, рядом с «Домом жирафа» расположен ряд вольер под названием «Кошачий ряд». Здесь живут кошки средних размеров: рысь, леопард, ирбис и пума. 
+</span><div class="education-item__info-items info"><div class="info__item"><img src="/assets/img/education-calendar.svg" alt=""><b>График работы:</b>С 8:00 до 19:45 </div></div><span class="education-item__link">Подробнее</span></div></div></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

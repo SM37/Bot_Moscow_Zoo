@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>СУРИКАТ</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Животные зоопарка" data-react-helmet="true"><meta name="keywords" content="Животные зоопарка" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">СУРИКАТ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">СУРИКАТ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Суриката, сурикат</span><span><b>Латинское название</b> — Suricata suricatta</span><span><b>Английское название</b> — Meerkat</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Виверровые</span><span><b>Род</b> — Суриката</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/543b90aa-2260-4843-bfa2-4bd4545a0fae.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Эти животные немного похожи на обезьян, немного на енотов, и чуть-чуть на грызунов. В действительности, они хищники и ближайшие родственники мангустов. Живя в суровых условиях Калахари, сурикаты питаются животными, яд которых убивает человека наповал.</p><p>	В некоторых местах ареала вид обычен, хотя численность в связи с нарушением среды обитания сокращается. Дальнейшее вмешательство человека в природу может стать причиной ухудшения ситуации. Статус вида по международной классификации – IUCN (LC).</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Сурикаты живут в засушливых и пустынных районах Южной Африки, западнее озера Чад, к северу от р. Оранжевой, включая пустыню Калахари. Лесов и густых зарослей эти животные избегают. Почву предпочитают песчаную, в которой роют глубокие и разветвлённые норы – целые подземные города, уходящие вглубь иногда на 2 метра. Иногда сурикаты пользуются брошенными норами африканской земляной белки. Если зверьки поселяются в горном районе, то убежищами для них служат скалистые пещерки.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/b725653d-ed47-48a3-9545-97ee316aab6e.jpg" alt=""></div></section><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Небольшие изящные зверьки, самые маленькие в подсемействе мангуст: длина их всего 50-60 см, причём почти половина приходится на хвост, а вес только особо крупных особей достигает 1 кг. Самки несколько крупнее самцов. От других мангустов сурикаты отличаются высокими ногами, четырёхпалыми лапами, сильным хвостом, равномерно по всей длине покрытым редкой шерстью, и отсутствием первого ложнокоренного зуба. Ноги этого животного очень характерны: они вооружены длинными и крепкими когтями, которые, особенно на передних лапах, достигают такого развития, как ни у одного другого из членов семейства. С помощью этих мощных когтей суриката легко выкапывает глубокие ходы, добывая еду и обустраивая жилище.</p><p>	Мех у сурикат довольно грубый, серовато-бурого цвета с желтоватым оттенком; на этом фоне в задней части спины выделяются от восьми до десяти прерывистых тёмных полос, не имеющих чётких очертаний. На ногах шерсть светлее, на животе и груди она редкая, серебристого оттенка; губы, подбородок и щеки беловатые; кончик морды, кольцо вокруг глаз, уши и кончик хвоста чёрные. Глаза с большим круглым зрачком и коричневой серебристо-серой радужной оболочкой.</p><p>	Сурикаты обладают очень острым обонянием, необходимым для поиска насекомых, закапывающихся в песок на большую глубину, особенно в сезон засухи. Длинные вибриссы на морде помогают им ориентироваться в тёмных тоннелях нор.</p><p>	У зверьков острое зрение, позволяющим издалека заметить хищника. Темные круги вокруг глаз поглощают избыток ультрафиолета, благодаря чему сурикаты могут смотреть практически на солнце. У них сильно развито третье веко, надежно предохраняющее глаза от попадания песка.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Сурикаты - дневные животные: ночи они проводят в норах, тесно прижавшись друг к другу и согреваясь коллективным теплом. После восхода солнца зверьки появляются на поверхности и принимаются за уборку жилища. Лишний грунт выбрасывается, входы в нору очищаются и расширяются. Помимо уборки обязательная утренняя процедура – солнечные ванны. Сурикаты встают на задние лапки, поворачиваются головой в сторону солнца и стоят, нежась в его лучах. Кожа на животе у них тёмная, а шерсть редкая, поэтому согреваются они быстро. После окончания утренних процедур вся семья отправляется на кормежку. Если место, где кормятся сурикаты, отстоит далеко от норы, они возвращаются в неё лишь вечером, отдыхая днём в тени деревьев или во временном убежище около места кормёжки. Когда корма достаточно рядом с домом, дневная сиеста проходит в родной норе.</p><p>До недавнего времени сурикаты были изучены чрезвычайно слабо, однако долговременные наблюдения за индивидуально мечеными зверьками на юге Африки с применением современных методов исследований позволили значительно лучше узнать этих животных.</p><p>Основной структурной единицей популяции сурикат является семья, в которой царит строгий матриархат. Всей жизнью семьи управляет главная самка: она выбирает нору, в которой будет жить семья, место кормёжки, и, самое главное, лишь она имеет право рожать детёнышей.</p><p>Доминирующий самец определяется в межсамцовых взаимодействиях, как правило, именно он образует пару с главной самкой и становится отцом всех рождающихся у неё малышей. Пара может главенствовать в течение нескольких лет, и семья будет расти за счет её потомства. Число животных в семье обычно до 30 особей, маленькие группы сурикат очень уязвимы для хищников, а большим семьям (более 40 животных) трудно поддерживать единство.</p><p>Семья сурикат имеет определённый групповой запах, который достигается мечением зверьками друг друга. Члены группы все делают вместе – в одно время кормятся и отдыхают, совместно заботятся о малышах и выступают единым фронтом против врагов. Во время кормления семья обязательно выставляет «часовых», которые внимательно обозревают окрестности и вовремя предупреждают о приближении хищника. За малышами приглядывают «няньки», причем в роли няньки могут выступать не только молодые самки, но и самцы.&nbsp;Очень большое значение в сообществе сурикат имеет груминг – зверьки не только освобождают друг друга от паразитов, за таким занятием семья ещё более сплачивается.</p><p>Каждая группа сурикат придерживается определённой охраняемой территории. Размер территорий разных семей, живущих, например, в Калахари, от 1 до3 кв. км, на каждой имеется не менее 5 нор, пригодных для жизни семьи. Нора, особенно выкопанная в мягком грунте, может занимать площадь 25 х 32 м, она представляет собой сложную сеть разветвлённых коридоров с камерами и имеет до сотни выходов. В среднем, однако, норы занимают площадь 5 х 5 м и имеют 15 выходов. В глубину норы уходят на 1,5 – 2 метра, и поэтому температура в ней достаточно постоянна и сохраняется в пределах 22-25 º. Семья может жить в одной норе в течение нескольких месяцев, однако размножившиеся блохи и клещи вынуждают зверьков регулярно менять жилище. Смена норы чаще происходит перед появлением потомства у главной самки, лишь в исключительных случаях группа переселяется, когда в норе есть малыши. При «переезде на новую квартиру» маленьких детёнышей несут в зубах взрослые члены семьи. Окрестности нор тщательно маркируются секретом специальных желёз.</p><p>Территориальные конфликты летом, когда пища в избытке, происходят редко. Семьи могут кормиться на расстоянии нескольких десятков метров, не замечая, или игнорируя друг друга. При встречах в пограничной зоне группы ограничиваются ритуальными пограничными взаимодействиями.</p><p>С наступлением зимы корма становится все меньше, и семьи сурикат могут вторгаться на чужие территории. Когда часовые замечают чужаков, они издают громкий отрывистый звук, и все зверьки группы, задрав хвосты и взъерошив шерсть, «плечом к плечу» становятся на защиту территории. Через несколько минут противостояния одна из семей бросается в атаку. Каждая из групп чувствует себя увереннее на своей территории, и зачастую непрошенные гости сразу обращаются в бегство. Между равными по численности стабильными группами редко происходят кровопролитные сражения, но, если семья за лето значительно выросла, она стремится расширить свою территорию. В таких случаях драки могут быть очень ожесточенными и даже оканчиваться гибелью части зверьков. Особенно самоотверженно сурикаты защищают свои норы с находящимися в них детёнышами, поскольку оставленные детёныши будут убиты чужаками.</p><p>Если во время влажного сезона образовалось несколько новых групп сурикат, то зимой неизбежно перераспределение территорий, которое будет сопровождаться жестокими схватками.</p><p><strong>Вокализация</strong></p><p>Сурикаты – необычайно разговорчивые существа. Во время кормёжки, особенно в высокой траве, они постоянно поддерживают акустический контакт друг с другом, издавая негромкие звуки. При опасности часовой сурикат громко отрывисто тявкает, отставший детёныш верещит. Часто зверьки общаются со своими родичами целыми «фразами», состоящими из 2-4 сигналов.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Сурикаты – хищники, и основная их еда – насекомые и другие беспозвоночные. С удовольствием едят они и ящериц, и птичьи яйца, и мелких грызунов, и их детёнышей. Широко известна уникальная способность сурикат поедать животных, чей яд способен убить даже человека. Они успешно охотятся на скорпионов, съедая их вместе с ядовитой железой. Некоторые ядовитые змеи также не могут защититься от сурикатов, хотя крупные кобры представляют для зверьков смертельную опасность. Пьют сурикаты крайне редко, довольствуясь влагой, содержащейся в корме.</p><p>	У сурикат очень интенсивный обмен веществ: за ночь они сжигают большое количество калорий и теряют около 5% массы тела, поэтому едят зверьки очень много. Исследователи выяснили, что в течение часа кормёжки взрослая суриката поедает в среднем 30 пищевых объектов.</p><p>	Летом, в сезон дождей, у сурикат нет недостатка в еде: земля буквально кишит насекомыми, которые ползают по поверхности, а если и закапываются, то на небольшую глубину. Поэтому у зверьков нет необходимости отходить далеко от норы, и они охотятся рядом с домом. Каждая суриката добывает себе пропитание сама, взрослые не делятся добычей друг с другом, однако дети – иное дело. Малыши начинают сопровождать взрослых на охоту в месячном возрасте, и все члены семьи кормят их. Вначале взрослые сурикаты дают детёнышам попробовать мягких личинок, постепенно обучая их охотиться на крупных беспозвоночных, включая скорпионов, а затем и позвоночных.</p><p>	Во время кормления кто-то из членов группы обязательно «стоит на часах», чтобы вовремя заметить приближение хищника. Для того, чтобы иметь лучший обзор, сурикаты залезают на камни, пни и даже кустарники, причем могут балансировать на тонких веточках, стоя на задних ногах. При приближении опасности (хищник или другая группа сурикат) наблюдатель оповещает о ней всю группу особым сигналом.</p><p>	С наступлением засушливого сезона сурикатам становится все труднее добывать пищу, которая прячется глубоко под землёй. Им приходится уходить от норы на значительные расстояния – 2-3 и более километров, зачастую совершая набеги на территории соседей. Отношения между зверьками на кормёжке становятся более жёсткими– они могут отбирать пищу друг у друга и даже у детёнышей. Особенно характерно такое поведение для доминантной самки, если она беременна. Именно в это время года гибнут одиночные зверьки, которые вынуждены одновременно искать корм, следить за хищниками и уклоняться от встреч с агрессивно настроенными собратьями.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Сурикаты достигают полового созревания в возрасте одного года, однако в природе начинают размножаться позже. Абсолютное преимущество в размножении имеет главная самка. Если появляются детёныши у кого-либо из её подросших дочерей, она может убить их, либо выгнать «провинившуюся» самку из группы, либо перевести всю группу в другую нору, оставив новоиспеченную мамашу с малышами.</p><p>	Самка способна приносить потомство до 4 раз в год, однако в подавляющем большинстве случаев размножение приурочено к летнему, влажному сезону и происходит с октября по март. В результате беременности, которая длится 70-77 дней, в норе появляется от 2 до 5 детёнышей весом 25-30 г. Покормив малышей, мать вместе со своей группой отправляется на охоту, а с детьми остаётся «нянька», которая не отходит от них до возвращения других членов группы. Детей кормит молоком не только мать, но и другие самки группы, причем для сурикат описано такое явление, как аллолактация: молоко появляется у нерожавших самок.</p><p>	Глаза у детёнышей открываются на 10-14 день, но из норы они выходят только через 3 недели после рождения. Ещё неделю с ними днём остается кто-то из членов группы, а в месячном возрасте малыши отправляются на охоту вместе со взрослыми. Старшие члены группы дают им вначале пробовать личинок, позже приносят более серьёзную добычу. Для сурикат характерно обучение молодых: дети не только наблюдают за охотой, старшие показывают им, как это делается. При этом степень готовности малыша справиться с той или иной жертвой взрослые определяют по их звукам. Молочное питание прекращается в возрасте 7-9 недель.</p><p>	Через 2-3 дня после рождения малышей самка вновь готова к спариванию. В это время доминантный самец группы не отходит от неё и тщательно охраняет от других самцов. В летний период, когда вокруг много еды, вокруг кормящейся семьи могут крутиться подросшие самцы из соседних групп, они привлекают молодых самок, но к ним «на свидание» может придти и доминантная самка. После спаривания эти самцы возвращаются в свои семьи, но иногда они уводят молодых самок и тогда образуется новая семья сурикат.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	Основные враги сурикат в природе – хищные птицы, но полакомиться зазевавшейся сурикатой может любой наземный хищник, поэтому в природе сурикаты редко доживают до 7-8 лет. Особенно часто погибают молодые зверьки: из 3 появившихся на свет детёнышей лишь один доживает до годовалого возраста. В неволе зверьки живут в среднем значительно дольше: максимальный зарегистрированный срок жизни сурикаты 12 лет и 6 месяцев.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Сурикаты – удивительно обаятельные маленькие существа, неизменно вызывающие улыбку. У африканцев есть два поверья, связанных с сурикатами. В соответствии с одним из них, зверьков называют солнечными ангелами. И не только потому, что они любят понежиться на утреннем африканском солнце. Считается, что они защищают поселения и скот от лунных дьяволов-оборотней, которые нападают на людей и животных (в роли лунных дьяволов, вероятно, выступают рукокрылые). Кроме того, поселяясь около хижин, сурикаты очищают местность от скорпионов и даже ядовитых змей, которых употребляют в пищу. Сурикаты легко приручаются, и местные жители иногда заводят их дома, чтобы обезопасить своё жилище от ядовитых животных.</p><p>	По другой легенде, в сурикат переселяются души умерших, именно поэтому эти зверьки так доброжелательны к людям. Осматривающееся животное может долго стоять на задних лапках, и издалека группу настороженно прислушивающихся к звукам пустыни зверьков можно принять за скучковавшихся человечков. За это их иногда называют «маленьким народцем». А благодаря бдительности, которую проявляет семья сурикат, они получили ещё одно ласковое прозвище: «часовые пустынь».</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>Сурикаты появились у нас в июле 2009 года, прилетев из ЮАР. К их прибытию в павильоне «Копытные Африки» был специально подготовлен вольер, имитирующий природную среду: песок, норы, коряги. На задней стенке нарисовали пейзаж африканской саванны, чтобы зверьки чувствовали себя почти как дома. И они «оценили» старания художников: начали прыгать на стену, будто бы стремясь убежать в родные просторы.</p><p>Девять зверьков подросткового возраста оказались выходцами из разных семей. У сурикат суровые законы, не позволяющие терпеть на своей территории чужаков, и в течение первых же дней эти законы вступили в силу. Один зверёк был убит, а двух других изгнали из группы. Их пришлось срочно отсадить, и только тогда остальные успокоились и зажили своим домом. Определились главная самка и главный самец, и вскоре мы заметили, что в группе ожидается пополнение.</p><p>Четыре малыша родились большими и крепкими, но их мама была ещё слишком юной (в природе годовалые самки не размножаются), и её организм не выдержал. Детёнышей пришлось взять на искусственное вскармливание. Выкармливать крошек весом в 30 грамм – задача не из лёгких, но у сотрудников зоопарка большой опыт, они были заботливыми мамами даже для новорожденных прыгунчиков весом в 5 г. Сурикатики попали в умелые руки и благополучно миновали период молочного вскармливания. В конце ноября к малышам подсадили самку, ранее изгнанную из группы. Был немалый риск того, что самка воспримет их как чужаков, и тогда дети могли поплатиться за этот эксперимент жизнью. Однако мы решили рискнуть, поскольку формирования правильного поведения молодым зверькам необходимо общаться со взрослыми особями своего вида. Наши опасения оказались напрасными: взрослый зверёк так истосковался в одиночестве, что возможность обзавестись семьёй воспринял как счастье. А вот малыши, в своём пятинедельном возрасте поначалу начали было отстаивать территорию: задрав хвосты плечом к плечу они выступили против «неприятеля». Однако взрослая самка избрала тактику игнорирования и, лишь через час, когда детёныши успокоились, улеглась рядом и начала их вылизывать. Так у нас появилась вторая семья сурикат.</p><p>А в вольере на экспозиции семья продолжает жить своей жизнью: зверьки играют, чистят шерстку друг другу, греются под «солнышком», роют песок. Дневной сон у них непродолжительный, и, подойдя к вольере, вы обязательно увидите этих забавных животных. Они любопытны настолько, что могут прервать свой отдых, чтобы посмотреть кто пришёл. А вот громкие звуки им не по душе: сурикаты пугаются, несмотря на толстое стекло, отделяющее их от людей. Но если у вольера постоите тихо, то услышите как они «разговаривают». В неволе животные не меняют свои привычки, им нужно постоянно слышать друг друга.</p><p>В холодное время года семья сурикат живёт в тёплом павильоне, с наступлением весны им открывают проход в уличный вольер. Зверьки начинают выходить на солнышко, обследуют окрестности, но холодные ночи по-прежнему проводят в тёплой норе в павильоне. И лишь когда прогреется земля, сурикаты на все лето уходят жить на улицу. Аналогичное происходит осенью: с наступлением заморозков животные постепенно переселяются в тёплый павильон.</p><p>Кормят сурикат 3 раза в день. В их меню входит творог, перепёлки и их яйца, куриное мясо, но особенно оживляются зверьки при виде мучных червей, личинок зофобаса и насекомых. Ловят и поедают их сурикаты молниеносно, подчас споря и ссорясь друг с другом. Из овощей предпочитают капусту, а из фруктов - бананы. Насытившись, сбиваются в кучку и, забыв все ссоры, чистят друг друга.</p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/kryukov_timofey_anatolevich" class="our-guardians__item"><img src="/assets/img/guardianship-all-5.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Крюков Тимофей Анатольевич</span></div></a><a href="/about/guardianship/all-guardianship/getmatch" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/4653a27b-60a0-4a94-a61f-e7db2f9acca4.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">getmatch</span><a href="https://getmatch.ru/" class="our-guardians__link">https://getmatch.ru/</a></div></a></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>

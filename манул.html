@@ -1,0 +1,508 @@
+<html lang="en" class="standart-color words-distance-standart font-small"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome, Firefox OS and Opera
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone (microsoft) -->
+    <!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+    <!-- iOS Safari (apple) -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <meta name="color-scheme" content="light">
+
+    <script>
+        var _gprc = {}
+    </script>
+    <title>Манул</title>
+<link rel="icon" href="/moscow.ico"><script defer="defer" src="/vendors.e232fa19edcf23a6cb4d.js"></script><script defer="defer" src="/main.e232fa19edcf23a6cb4d.js"></script><link href="/vendors.e232fa19edcf23a6cb4d.css" rel="stylesheet"><link href="/main.e232fa19edcf23a6cb4d.css" rel="stylesheet"><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="progressspinner">
+@layer primereact {
+    .p-progress-spinner {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .p-progress-spinner::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .p-progress-spinner-svg {
+        animation: p-progress-spinner-rotate 2s linear infinite;
+        height: 100%;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .p-progress-spinner-circle {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: 0;
+        stroke: #d62d20;
+        animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+        stroke-linecap: round;
+    }
+}
+
+@keyframes p-progress-spinner-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes p-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+</style><link rel="canonical" href="http://mysite.com/example" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Манул" data-react-helmet="true"><meta name="keywords" content="манул, кот манул" data-react-helmet="true"></head>
+
+<body>
+    <div id="root"><div><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script></div><header class="header"><div class="header__top"><div class="header__info"><div class="work-time"><span class="work-time__top">Ждём вас с 8:00 до 20:00</span><span class="work-time__bottom">Кассы открыты с с 8:00 до 19:00</span></div><div class="address"><span>Москва, ул. Большая Грузинская, 1</span></div></div><div class="header__btns"><div class="sv"><img class="sv__eye" src="/assets/img/eye.svg" alt=""></div><div class="search"><input placeholder="Искать на сайте зоопарка" type="search" value=""><img class="search__search-ico" src="/assets/img/search.svg" alt=""></div><a class="button p-button p-component p-button-link buy  cta" href="/visitors/tickets"><span class="p-button-label p-c">Билеты</span></a></div></div><div class="header__bottom"><div class="header__bottom-center"><img src="/assets/img/logo.svg" alt="" class="logo"><div class="menu-items"><div class="menu-items__general"><a href="/visitors" id="visitors" class="">Посетителям</a><a href="/animals/kinds" id="animals/kinds" class="">Животные</a><a href="/specialists/library" id="specialists/library" class="">Специалистам</a><a href="/education" id="education" class="">Просвещение</a><a href="/about" id="about" class="">О Зоопарке</a><a href="/news" id="news" class="">Новости</a><a href="/contacts" id="contacts" class="">Контакты</a></div></div><div class="burger"><div class="burger__buy"><span>Билеты</span></div><img src="/assets/img/burger.svg" alt="burger"></div></div></div></header><div class="breadcramb"><div class="breadcramb-container"><div id="bread-crumb" class="bread-crumb"><a href="/" class="">Главная</a><a href="/animals" class="bread-crumb_disabled">Животные</a><a href="/animals/kinds" class="">Животные зоопарка</a><a href="animals/kinds" class="bread-crumb_current">МАНУЛ</a></div><div style="height: 10px;"></div></div></div><div class="animals"><div class="animals__container"><div class="animals-kinds-detail"><span class="animals-kinds-detail__title">МАНУЛ</span><section class="systematics"><span class="systematics__title">Систематика</span><div class="systematics__info"><div class="systematics__left-container"><div class="systematics__block description"><span><b>Русское название подвида</b> — Манул, забайкальский или сибирский манул</span><span><b>Латинское название</b> — Felis cat </span><span><b>Английское название</b> — Manul, Manul cat, Pallas` cat, Steppe cat</span><span><b>Класс</b> — Млекопитающие</span><span><b>Отряд</b> — Хищные</span><span><b>Семейство</b> — Кошачьи (Felidae)</span><span><b>Род</b> — Мелкие кошки (Felis)</span></div><div class="systematics__block participates"></div></div><img class="systematics__right-image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animals/d7b75e62-45e5-4a75-a3b1-17dbb31e6fea.jpeg" alt=""></div></section><section class="text-block "><span class="text-block__title">Статус вида в природе</span><div class="text-block__dangerous"><p>Манул практически не&nbsp;приручается, не&nbsp;становятся ручными даже рождённые в&nbsp;неволе котята.</p><p>	Повсеместно редок или очень редок, численность продолжает сокращаться, местами на&nbsp;грани исчезновения. Внесён в&nbsp;Красную книгу России, Международную Красную книгу – IUCN (NT) и в Приложение II Конвенции о международной торговле – CITES.</p><p>	Основными лимитирующими факторами, несомненно, являются антропогенные: браконьерский капканный отлов и&nbsp;охота, отравление приманками для волков и&nbsp;ядохимикатами, пожары, вызванные степными палами, распашка и&nbsp;освоение земель под пастбища.</p></div></section><section class="areal"><span class="areal__title">Ареал и места обитания</span><div class="areal__container"><div class="areal__info"><p>	Ареал манула довольно обширен и&nbsp;охватывает безлесные горы засушливых областей, каменистые пустыни и&nbsp;степи, останцы в&nbsp;степях и&nbsp;пустынях Передней, Средней и&nbsp;Центральной Азии и&nbsp;юга Сибири от&nbsp;Каспийского моря до&nbsp;Забайкалья. Необходимым условием для обитания манула является наличие скальных выходов и&nbsp;обширных участков кустарниковых зарослей, где звери устраивают гнёзда и&nbsp;прячутся днём. Поэтому на&nbsp;обширной территории своего ареала манул приурочен только к&nbsp;определённым ландшафтам: к&nbsp;массивам мелкосопочника, горным кряжам, отрогам и&nbsp;подножиям хребтов, отдельным горам и&nbsp;прилегающим к&nbsp;ним равнинным участкам местности. Для всех мест обитания манула характерен резко континентальный климат с&nbsp;очень низкими температурами зимой (до&nbsp;-50° С) и&nbsp;незначительным снежным покровом.</p></div><img class="areal__image" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/3d808b80-8b9b-4e3e-a24f-5012e2951511.jpg" alt=""></div></section><div class="splide slider-comp splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized" id="splide01" role="region" aria-roledescription="carousel"><div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" aria-label="Go to last slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true"><ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1513.75px);"><li class="splide__slide splide__slide--clone" id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="6 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/5c327688-751a-4c32-8076-d032338a39fd.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="7 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/6f08753a-4dd7-4c06-85ef-b406c121286b.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="8 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/89fe4e66-7e45-4564-b8a1-5b19ff6ecd55.jpeg"></li><li class="splide__slide splide__slide--clone is-prev" id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="9 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/0c2d53ed-849a-4f97-a0eb-bc0d07e3e9d2.jpeg"></li><li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 9" style="margin-right: 12px; width: calc(50% - 6px);"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/4b1e8ded-9107-4a9e-9863-dd778d351483.jpeg"></li><li class="splide__slide is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/9ae7465f-1b28-464b-8206-3cccdb73dcb1.jpeg"></li><li class="splide__slide" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/35f7234f-c2fe-47a5-a9fc-804a242b355c.jpeg"></li><li class="splide__slide" id="splide01-slide04" role="group" aria-roledescription="slide" aria-label="4 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/a0cb1faa-33b5-4c3e-a080-a9a3d81f388a.jpeg"></li><li class="splide__slide" id="splide01-slide05" role="group" aria-roledescription="slide" aria-label="5 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/d9066ef6-bbbd-404c-b029-7c8ba94ec4f4.jpeg"></li><li class="splide__slide" id="splide01-slide06" role="group" aria-roledescription="slide" aria-label="6 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/5c327688-751a-4c32-8076-d032338a39fd.jpeg"></li><li class="splide__slide" id="splide01-slide07" role="group" aria-roledescription="slide" aria-label="7 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/6f08753a-4dd7-4c06-85ef-b406c121286b.jpeg"></li><li class="splide__slide" id="splide01-slide08" role="group" aria-roledescription="slide" aria-label="8 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/89fe4e66-7e45-4564-b8a1-5b19ff6ecd55.jpeg"></li><li class="splide__slide" id="splide01-slide09" role="group" aria-roledescription="slide" aria-label="9 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/0c2d53ed-849a-4f97-a0eb-bc0d07e3e9d2.jpeg"></li><li class="splide__slide splide__slide--clone is-active" id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="1 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/4b1e8ded-9107-4a9e-9863-dd778d351483.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="2 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/9ae7465f-1b28-464b-8206-3cccdb73dcb1.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone07" role="group" aria-roledescription="slide" aria-label="3 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/35f7234f-c2fe-47a5-a9fc-804a242b355c.jpeg"></li><li class="splide__slide splide__slide--clone" id="splide01-clone08" role="group" aria-roledescription="slide" aria-label="4 of 9" style="margin-right: 12px; width: calc(50% - 6px);" aria-hidden="true"><img class="slider-comp__item" src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/animalsdetail/a0cb1faa-33b5-4c3e-a080-a9a3d81f388a.jpeg"></li></ul></div></div><section class="text-block "><span class="text-block__title">Внешний вид и морфология</span><div class="text-block__dangerous"><p>	Размером манул не&nbsp;крупнее домашней кошки. Общая длина тела 50–65&nbsp;см, хвоста 21–31&nbsp;см.&nbsp;Вес тела 2500–4500 г. Тело массивное на&nbsp;коротких плотных ногах. Отчасти из-за пышного длинного меха манул выглядит тяжелым и&nbsp;приземистым. Хвост толстый и&nbsp;пышный и&nbsp;имеет равномерную толщину по&nbsp;всей длине. Голова относительно небольшая шаровидная, с&nbsp;короткой притупленной мордой, крупным лбом и&nbsp;большими выпуклыми близко посаженными глазами. При взгляде на&nbsp;голову манула создаётся впечатление плоского «лица», усиленное широкими закруглёнными низко посаженными ушами и&nbsp;довольно большими баками.</p><p>	Общий цвет шерсти представляет собой сложную комбинацию светло-серого с&nbsp;палево-охристой или палево-рыжеватой примесью. По&nbsp;лбу и&nbsp;темени серого цвета беспорядочно разбросаны чёрные пятна. Вокруг глаз, на&nbsp;губах и&nbsp;подбородке белые поля, причем на&nbsp;верхних губах есть примесь ржавого цвета. Под глазами через щеки идут две узкие чёрные полосы к&nbsp;основанию ушей под шею.</p></div></section><section class="text-block "><span class="text-block__title">Активность и социальная организация</span><div class="text-block__dangerous"><p>Активен, главным образом, в&nbsp;сумерки и&nbsp;ночью. Обычно его встречают в&nbsp;сумерках после захода солнца, или рано утром, летом нередко появляется и&nbsp;днём. Часть ночи проводит в&nbsp;логове.</p><p>Манул, подобно другим кошкам, предпочитает одиночество. Размеры индивидуального участка не&nbsp;выяснены, данные об&nbsp;этом лишь косвенные и&nbsp;отрывочные. Например, отмечается, что во&nbsp;время охоты манул может уходить от&nbsp;своего логова в&nbsp;камнях на&nbsp;0,1–1&nbsp;км, посещая ближайшие участки степи, а&nbsp;также поля, залежи и&nbsp;скалы. Во&nbsp;время сезона размножения за&nbsp;самкой в&nbsp;течке ходят несколько самцов, между которыми нередки ожесточённые драки.</p><p>	<strong>Вокализация</strong></p><p>	Манул – кошка молчаливая, «разговаривает» очень редко. Звуки, издаваемые им, неожиданно гораздо более низкие, чем можно было ожидать от животного такого размера. Они совсем не похожи на кошачье мяуканье и скорее напоминают крик «га» серого гуся.</p></div></section><section class="text-block "><span class="text-block__title">Питание и кормовое поведение</span><div class="text-block__dangerous"><p>	Питается манул в&nbsp;основном пищухами и&nbsp;грызунами: песчанками, полёвками, сусликами, хомячками, а&nbsp;также куропатками и&nbsp;кекликами. Иногда ловит молодых сурков, зайцев-толаев, а&nbsp;также жаворонков и&nbsp;других мелких птиц, гнездящихся на&nbsp;земле. Ловит свою добычу, скрадывая или карауля её у&nbsp;камней и&nbsp;нор. Из&nbsp;неглубоких нор может доставать грызунов лапой.</p></div></section><section class="text-block "><span class="text-block__title">Размножение и развитие</span><div class="text-block__dangerous"><p>	Сведения о&nbsp;размножении в&nbsp;природе скудны. Сезон размножения наступает в&nbsp;марте—апреле. Котята появляются в&nbsp;конце апреля—мае. В&nbsp;Бурятии рождение выводков отмечено в&nbsp;конце мая—июне. В&nbsp;помёте бывает от&nbsp;2 до&nbsp;8 котят, обычно 3–5. Детёныши рождаются слепыми, в&nbsp;возрасте 2&nbsp;месяцев линяют и&nbsp;весят в&nbsp;это время 500–600 г. К&nbsp;концу сентября они практически достигают веса и&nbsp;размеров взрослого зверя.</p><p>	Котят выкармливает только самка, самцы в воспитании потомства участия не принимают.</p></div></section><section class="text-block "><span class="text-block__title">Продолжительность жизни</span><div class="text-block__dangerous"><p>	Продолжительность жизни в&nbsp;природе неизвестна, в&nbsp;Московском зоопарке самец манула дожил до&nbsp;18 лет.</p></div></section><section class="text-block "><span class="text-block__title">Вид и человек</span><div class="text-block__dangerous"><p>	Крайне скрытная кошка. Из-за этой особенности остаётся вне поля зрения исследователей даже в&nbsp;районах с&nbsp;наибольшей численностью. Манул обладает поразительной способность искусно затаиваться. Даже зная место, где затаился зверь, его чрезвычайно трудно найти. Уходя от&nbsp;преследования, спасается бегством, но&nbsp;при первой&nbsp;же возможности уходит в&nbsp;нору или прячется между камней. При ослеплении фарами автотранспорта ночью манул также пытается затаиваться, а&nbsp;не&nbsp;убегает, что часто стоит ему жизни. Он&nbsp;плохо бегает и&nbsp;при упорном преследовании останавливается, поворачивается в&nbsp;сторону преследователя и&nbsp;садится или ложится, поэтому легко становится добычей человека или крупной собаки.</p><p>	Изображение манула встречается на марках и монетах некоторых стран, где он обитает (Таджикистан, Азербайджан, Монголия, Киргизия). Несмотря на то, что манул не водится ни в Европе, ни в Африке, он попал на выпуски марок ООН и Бенина, посвященные редким видам животных. Изображение манула присутствует на одной из спичечных этикеток СССР (1964 г.). В 1996 г. в Туркменистане в серии «Редкие и исчезающие животные» была выпущена памятная серебряная монета с изображением манула номиналом 500 манат, а в 2016 г. монету с изображением манула номиналом в 2 рубля в серии «Красная книга» выпустил Банк России.</p></div></section><section class="text-block "><span class="text-block__title">Содержание животных в Московском зоопарке</span><div class="text-block__dangerous"><p>	Манул – эмблема Московского зоопарка на&nbsp;протяжении многих лет, начиная с&nbsp;1987 года. Его изображение встречает всех посетителей на&nbsp;Главном входе. Однако история содержания этого вида в&nbsp;зоопарке намного дольше&nbsp;— первые кошки появились у&nbsp;нас, согласно архивным документам, в&nbsp;1949 году. С&nbsp;1957 года этот вид был представлен в&nbsp;коллекции зоопарка постоянно. С&nbsp;1975 года нашему зоопарку одному из&nbsp;первых в&nbsp;мире удалось добиться регулярного размножения манулов. С&nbsp;тех пор на&nbsp;свет здесь появилось более 140 детёнышей. Вырастить удавалось не&nbsp;всех котят, однако сейчас «московские» манулы живут во&nbsp;многих зоопарках Америки и&nbsp;Европы. Сегодня Московский зоопарк – бесспорный лидер по&nbsp;количеству родившихся у нас малышей.</p><p>	Экспонирование манула&nbsp;— дело сложное. Даже когда наши манулы демонстрировались публике в&nbsp;вольере на&nbsp;Кошачьем ряду, увидеть их&nbsp;было нелегко: скрытные кошки выходили на&nbsp;прогулку только в&nbsp;сумерках, когда зоопарк закрывал двери за&nbsp;последним посетителем. Днём&nbsp;же они предпочитали отлеживаться в&nbsp;укромных уголках вольера. Любили наши манулы проводить время и&nbsp;в&nbsp;своих домиках во&nbsp;внутренних помещениях секции, на&nbsp;теплой сенной подстилке, где тише и&nbsp;спокойнее всего.</p><p>	В&nbsp;2010 году Евроазиатской региональной ассоциацией зоопарков и&nbsp;аквариумов (ЕАРАЗА) разработала на&nbsp;базе коллекции Московского зоопарка большую научно-производственную Программу «Изучение, сохранение и&nbsp;размножение манула». По&nbsp;этой программе зоопарк получил разрешение на&nbsp;отлов в&nbsp;дикой природе восьми манулов. После долгих согласований экспедиция отправилась в&nbsp;Забайкалье. Было отловлено три самца и&nbsp;пять самок. Большинство животных имело низкий, а&nbsp;трое&nbsp;— критический вес. Они вряд&nbsp;ли прожили бы долго, останься в&nbsp;дикой природе. Один из&nbsp;самцов, самый старший и&nbsp;крупный, ко&nbsp;всему прочему был еще и&nbsp;травмирован, что явно мешало ему охотиться. То, что звери оказались в&nbsp;зоопарке, продлило им&nbsp;жизнь. Правда, одну из&nbsp;самочек пришлось выпустить обратно. Она в&nbsp;течение нескольких дней после отлова отказывалась от&nbsp;еды. А&nbsp;ведь ей&nbsp;предстоял еще перелёт и&nbsp;длительная адаптация на&nbsp;новом месте. Наши зоологи решили не&nbsp;рисковать жизнью зверя. Так что в&nbsp;зоопарк в&nbsp;результате приехали три самца и&nbsp;четыре самки.</p><p>	Манулам дали несколько месяцев на&nbsp;адаптацию. Их&nbsp;не&nbsp;только не&nbsp;показывали публике, даже контакты с&nbsp;обслуживающим персоналом были сведены к&nbsp;минимуму, чтобы уменьшить стресс. Все необходимые клинические исследования проводились под наркозом.</p><p>	Наблюдая за&nbsp;новыми питомцами, сотрудники секции постепенно узнавали их&nbsp;характеры, понимали, кто из&nbsp;них более стрессоустойчив и&nbsp;годится для демонстрации на&nbsp;публике. Манулы&nbsp;— одиночки. Однако нашим сотрудникам удалось подружить двух молодых самочек, которые были пересажены на&nbsp;экспозицию.</p><p>	В&nbsp;2013 году у&nbsp;трёх наших самок появилось на&nbsp;свет потомство. Вес новорожденных котят был от&nbsp;70 до&nbsp;100 г. Кормящим мамам в&nbsp;этот период дополнительно к&nbsp;основному рациону выдавали молоко и&nbsp;яйца. Одну из&nbsp;молодых мам, самую спокойную и&nbsp;коммуникабельную, вместе с&nbsp;котёнком высадили в&nbsp;экспозиционный вольер. Первое время котенок прятался от&nbsp;публики в&nbsp;домике, однако вскоре осмелел и&nbsp;стал с&nbsp;начал выходить на&nbsp;просторы вольера. Сотрудники секции подарили ему игрушку&nbsp;— длинный ствол дерева с&nbsp;большим дуплом. От&nbsp;такого подарка малыш пришел в&nbsp;неописуемый восторг.&nbsp;Он&nbsp;долго с&nbsp;интересом исследовал его, после чего определил дупло своим домом и&nbsp;постоянно в&nbsp;нем отдыхал.</p><p>	В настоящее время на экспозиции живёт манул Тимофей – герой нашего телеграмм канала. Тимоша, как настоящий манул, далеко не всегда показывается публике, но на помощь приходят наши сотрудники, которые подкарауливают его и снимают замечательные видеоролики. В вольере и во внутреннем помещении стоят видеокамеры, которые очень помогают: мы можем отследить любое изменение в поведении животного.</p><p>	Кормим мы Тимофея и других манулов мясом, даём им&nbsp;также костную муку, зелень злаков. Однако лучшим кормом для них являются целые тушки грызунов и&nbsp;перепелов, которых специально разводят для этой цели. Корм даём вечером. Осенью, в&nbsp;октябре&nbsp;— ноябре, аппетит у&nbsp;манулов повышается. Животные едят в&nbsp;полтора раза больше обычного и&nbsp;стремительно набирают вес. В это время они становятся более активны и в вольере их видно гораздо чаще. Зато в&nbsp;декабре&nbsp;— январе манулы двигаются меньше, аппетит ухудшается, и&nbsp;иногда зимой они даже едят через день.</p></div></section><section class="our-guardians"><div class="our-guardians__top-container"><span class="our-guardians__title">Наши опекуны</span><a class="button p-button p-component p-button-link   " href="/about/guardianship/all-guardianship"><span class="p-button-label p-c">Посмотреть все</span></a></div><div class="our-guardians__list"><a href="/about/guardianship/all-guardianship/careva_irina_alekseevna" class="our-guardians__item"><img src="/assets/img/guardianship-all-7.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Царева Ирина Алексеевна</span></div></a><a href="/about/guardianship/all-guardianship/https_www_psbank_ru" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/2959e3f4-39bc-41c0-a02c-576408f30646.png" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Промсвязьбанк</span><a href="https://www.psbank.ru" class="our-guardians__link">https://www.psbank.ru</a></div></a><a href="/about/guardianship/all-guardianship/https_t_me_moscowtop" class="our-guardians__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/guardians_detail/ae31f3b1-5160-4585-86a5-aefa0aea984e.jpeg" alt="" class="our-guardians__avatar"><div class="our-guardians__info"><span class="our-guardians__name">Москва с огоньком</span><a href="https://t.me/moscowtop" class="our-guardians__link">https://t.me/moscowtop</a></div></a></div></section><section class="last-news"><div class="last-news__title-row"><div class="last-news__left-container"><span>Последние новости</span><a href="/news" class="last-news__show-all"><span>Смотреть все</span><img src="/assets/img/arrow-right.svg" alt=""></a></div><div class="last-news__right-container"><button aria-label="4 новости" class="button last-news__count-btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">4 новости</span></button><button aria-label="8 новостей" class="button last-news__count-btn  p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">8 новостей</span></button></div></div><div class="last-news__news"><a href="/news/rozygrysh_dlya_mnogodetnyh_semey" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f4bcfab6-3149-4535-8be5-abc7c5adabf6.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">Розыгрыш для многодетных семей! </span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_moskovskom_zooparke_startuet_akciya_dubovaya_feeriya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/ace2cd19-ac5a-4fb0-ad69-18b9fa2b99f4.jpg" alt=""><span class="last-news__date">27 сентября</span><div><span class="last-news__title">В Московском зоопарке стартует акция «Дубовая феерия»</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/nachalas_zazhirovka_manula_timofeya" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edc2a70bb5462366280fc/images/news/f647113a-4674-4be5-b387-5828fbadfa76.jpg" alt=""><span class="last-news__date">24 сентября</span><div><span class="last-news__title">Началась зажировка манула Тимофея</span><span class="last-news__sub">Московский зоопарк</span></div></a><a href="/news/v_zoosad_deda_moroza_priehal_molodoy_zhenih" class="last-news__item"><img src="https://storage.moscowzoo.ru/storage/647edf766558bf60cc6954d2/images/news/7783a1dd-198d-4ed8-aedd-dc135939d170.JPG" alt=""><span class="last-news__date">17 сентября</span><div><span class="last-news__title">В Зоосад Деда Мороза приехал молодой жених!</span><span class="last-news__sub">Московский зоопарк</span></div></a></div></section><div class="video"><div class="video__screen-container"><iframe src="https://www.youtube.com/embed/Cbxu0991p6w?si=hIVSCnYveygM1Bud" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="video__screen"></iframe></div></div><section class="become-guardian"><div class="container"><span class="container__title">Присоединитесь к сохранению исчезающих видов – станьте опекуном</span><a class="button p-button p-component p-button-link container__btn  " href="/about/guardianship"><span class="p-button-label p-c">Стать опекуном</span></a></div><div class="become-guardian__image"></div></section></div></div></div><footer class="footer"><div class="columns"><div class="columns__item"><span class="columns__row_title columns__row_partner">Партнёр</span><a href="http://stepup24.ru" target="_blank"><img class="columns__row_logo-ca" src="/assets/img/ca.svg" alt=""></a><a href="https://www.afisha.ru" target="_blank"><img class="columns__row_logo-afisha" src="/assets/img/afisha.svg" alt=""></a><a href="https://www.mos.ru/kultura" target="_blank"><img class="columns__row_logo-ok" src="/assets/img/dm.svg" alt=""></a></div><div class="columns__item"><span class="columns__row_title">Посетителям</span><a href="/visitors/tickets" class="columns__row_link">Билеты</a><a href="/visitors/excursions" class="columns__row_link">Экскурсии</a><a href="/animals/maps" class="columns__row_link">Карта зоопарка</a><a href="/visitors/tickets-rules" class="columns__row_link">Правила заказа, оплаты и получения билетов</a></div><div class="columns__item"><span class="columns__row_title">Мой зоопарк</span><a href="/about/guardianship" class="columns__row_link">Опекунство</a><a href="/about" class="columns__row_link">О Зоопарке</a><a href="/about/director" class="columns__row_link">Генеральный директор</a><a href="/about/history" class="columns__row_link">История зоопарка</a><a href="/about/documents" class="columns__row_link">Документы</a></div><div class="columns__item"><span class="columns__row_title">Просвещение</span><a href="/specialists/academy" class="columns__row_link">Академия Московского зоопарка</a><a href="/education/manulyata" class="columns__row_link">Манулята</a><a href="/education/pony-club" class="columns__row_link">Пони-клуб</a><a href="/education/open-lecture" class="columns__row_link">Открытый лекторий</a><a href="/education/young-biologists" class="columns__row_link">Кружок Юных Биологов</a></div><div class="columns__item"><a class="columns__row_tel" href="tel:74992522951">+ 7 499 252 29 51</a><span class="columns__row_time">Ждём вас с 8:00 до 20:00</span><div class="columns__row_social"><a href="https://ok.ru/moscowzoo"><img class="columns__row_social-ico" src="/assets/img/ok.svg" alt=""></a><a href="https://t.me/Moscowzoo_official"><img class="columns__row_social-ico" src="/assets/img/tg.svg" alt=""></a><a href="https://vk.com/moscow_zoo"><img class="columns__row_social-ico" src="/assets/img/vk.svg" alt=""></a><a href="https://www.youtube.com/@Moscowzooofficial"><img class="columns__row_social-ico" src="/assets/img/yt.svg" alt=""></a></div></div></div><div class="footer__alerts"><div class="cookie"><div class="cookie__center"><div class="cookie__container"><img class="cookie__ico" src="/assets/img/cookies.svg" alt=""><span class="cookie__text">Наш сайт использует файлы cookie</span><button aria-label="Хорошо" class="button cookie__btn cta p-button p-component" data-pc-name="button" data-pc-section="root"><span class="p-button-label p-c" data-pc-section="label">Хорошо</span></button></div></div></div></div></footer><div class="up-btn "><img class="up-btn__ico" src="/assets/img/up-btn.svg" alt="up-btn"></div><img src="/assets/img/chat-btn.svg" alt="chat-btn" class="chat-btn"></div>
+
+
+</body></html>
